@@ -28,7 +28,7 @@ If you are interested in `solscape` or want to contribute, please feel free to c
   Center for Machine Learning Research (CMLR), Peking University.
   
   - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
-  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+  - Website: [Lei ZHANG's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
 
 - **Yuyang LIU**
   
@@ -37,7 +37,7 @@ If you are interested in `solscape` or want to contribute, please feel free to c
   School of Mathematical Science (SMS), Peking Univertsity.
   
   - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
-  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
+  - Website: [Yuyang LIU's Homepage](https://liuonly1121.github.io/)
 
 ---
 
