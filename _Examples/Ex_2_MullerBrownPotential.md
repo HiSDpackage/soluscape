@@ -161,7 +161,7 @@ MyLandscape.Run()
     Iteration: 200|| Norm of gradient: 0.000007
     Non-degenerate saddle point identified: Morse index =0 (number of negative eigenvalues).
     
-
+We draw the search trajectory.
 
 ```python
 MyLandscape.DrawTrajectory(ContourGridNum=100, ContourGridOut=25, DetailedTraj=True)
