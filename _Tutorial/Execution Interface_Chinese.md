@@ -19,7 +19,7 @@ mathjax: true
 *      Copyright:  Copyright (c) 2024-2025, Lei ZHANG, Yuyang LIU. All rights reserved.
 -->
       
-这是一个用高阶鞍点动力学（High-index Saddle Dynamics,HiSD）构建解景观的Python包。该工具包支持在动力系统中数值计算鞍点及其层次结构。
+一个基于高阶鞍点动力学（HiSD）构建解景观的Python工具包。该工具包支持动力系统中鞍点的数值计算及其层级结构分析，简化了鞍点搜索流程，提供灵活的参数设置和丰富的可视化功能。
 
 ---    
       
@@ -57,6 +57,7 @@ landscape.Run()  # Starts computation
 从指定坐标重新启动计算。
 
 **参数**  
+
 | 名称 | 类型 | 约束条件 | 描述 |
 |------|------|-------------|-------------|
 | `RestartPoint` | `list` or `numpy.ndarray` (1D) | 必须与系统维度匹配 | 初始位置向量 |
@@ -77,6 +78,7 @@ landscape.RestartFromPoint(
 从现有鞍点重新启动计算。 
 
 **参数**  
+
 | 名称 | 类型 | 约束条件 | 描述 |
 |------|------|-------------|-------------|
 | `BeginID` | `int` | `0 ≤ begin_id < len(SaddleList)` | 有效的鞍点 ID |
@@ -99,6 +101,7 @@ landscape.RestartFromSaddle(
 可视化系统的搜索轨迹和能量景观。支持等高线叠加、样式自定义以及高维投影。
 
 **参数**  
+
 | 名称 | 类型 | 约束条件 | 描述及默认值 |
 |------|------|-------------|-------------|
 | `DetailedTraj` | `bool` | 需要保存的轨迹数据 | 显示完整迭代路径 <br>（默认值：`False`） |
@@ -163,6 +166,7 @@ landscape.DrawTrajectory(
 可视化解景观中鞍点之间的连接性。显示鞍点节点和连接它们的搜索路径的标记。支持点和连接线的自定义样式。
 
 **参数**  
+
 | 名称 | 类型 | 默认值 | 描述 |
 |------|------|-------------|-------------|
 | `Title` | `str` | `"The Connection of Saddle Points"` | 图表标题文本 |
@@ -188,6 +192,7 @@ landscape.DrawConnection(
 将计算结果以指定的序列化格式持久化存储。
 
 **参数**  
+
 | 名称 | 类型 | 约束条件 | 描述 |
 |------|------|-------------|-------------|
 | `filepath` | `str` | 有效的文件系统路径 | 目标路径（不带扩展名） |
