@@ -45,8 +45,3 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
-
-document.querySelectorAll('.toc__menu h4').forEach(h4 => {
-  h4.parentElement.remove()
-})
-
