@@ -563,7 +563,7 @@ Strategy for eigenvector utilization in perturbations.
 | `all` (Default) | High | Exhaustive |  
 | `min` | Low | Partial |  
 
---- 
+
 
 **Default**  
 `1e-5`   
