@@ -129,12 +129,12 @@ HiSD 依赖以下Python库：
 ### 作者
 
 - **张磊**  
-  - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
-  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+  - 邮箱: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
+  - 主页: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
 
 - **刘宇扬**  
-  - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
-  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
+  - 邮箱: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
+  - 主页: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
 ---
 
