@@ -5,6 +5,7 @@ title: ""
 sidebar:
     nav: Tutorial
 toc: true
+toc_max_level: 3
 toc_sticky: true
 mathjax: true
 
