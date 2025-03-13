@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /Examples/Ex_1_Butterfly_Chinese
-title: "Example 1 : Butterfly"
+title: "示例1：蝴蝶"
 sidebar:
     nav: Examples_Chinese
 toc: true
