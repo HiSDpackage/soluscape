@@ -4,8 +4,8 @@ permalink: /Examples/Ex_1_Butterfly_Chinese
 title: "示例1：蝴蝶"
 sidebar:
     nav: Examples_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
