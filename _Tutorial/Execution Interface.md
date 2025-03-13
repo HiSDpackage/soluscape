@@ -20,7 +20,7 @@ mathjax: true
 -->
 
       
-A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems.
+A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems.It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
       
 ---
       
