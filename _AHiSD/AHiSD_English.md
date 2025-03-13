@@ -5,8 +5,8 @@ title: "Accelerated High-index Saddle Dynamics"
 sidebar:
     nav: Theory
 toc: true
-toc_sticky: true
-mathjax: true
+toc_sticky: false
+mathjax: false
 ---
 
 In this chapter, we briefly introduce two momentum-accelerated
