@@ -4,8 +4,8 @@ permalink: /Examples/Ex_3_Cubic_Chinese
 title: "示例3：立方体"
 sidebar:
     nav: Examples_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
