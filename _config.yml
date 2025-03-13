@@ -117,8 +117,8 @@ defaults:
       sidebar:
         nav: "Examples"
       mathjax: true
-      toc: true
-      toc_sticky: true  
+      toc: false
+      toc_sticky: false  
   # _Background: for Background documents
   - scope:
       path: "_Background"
