@@ -22,12 +22,12 @@ title                    : "HiSD Package: solscape-1.0"
 email: liuyuyang@stu.pku.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD).
-baseurl: "/solscape" # the subpath of your site, e.g. /blog
-url: "https://hisdpackage.github.io/" # the base hostname & prool for your site, e.g. http://example.com
+baseurl: "/attempt" # the subpath of your site, e.g. /blog
+url: "https://hisdpackage.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 atom_feed:
   hide: true
 
-repository: HiSDpackage/solscape
+repository: HiSDpackage/attempt
 repository_tree: main
 
 # Build settings
@@ -53,7 +53,6 @@ kramdown:
   # syntax_highlighter: rouge // new version, github pages need the old one
 permalink   : date
 
-  
 #comments:
 # provider: "disqus"
 # disqus:
@@ -63,7 +62,7 @@ include:
   - _Tutorial
   - _Examples
   - _Background
-  - _HiSD
+  - _HiOSD
   - _GHiSD
   - _AHiSD
   - _Contact us
@@ -103,7 +102,7 @@ defaults:
         nav: "Tutorial"
       mathjax: true
       toc: true
-      _sticky: true  
+      toc_sticky: true  
    # _Examples: for Examples documents
   - scope:
       path: "_Examples"
@@ -117,7 +116,7 @@ defaults:
         nav: "Examples"
       mathjax: true
       toc: true
-      _sticky: true  
+      toc_sticky: true  
   # _Background: for Background documents
   - scope:
       path: "_Background"
@@ -131,10 +130,10 @@ defaults:
         nav: "Theory"
       mathjax: true
       toc: true
-      _sticky: true    
-  # _HiOSD: for HiSD documents
+      toc_sticky: true    
+  # _HiOSD: for HiOSD documents
   - scope:
-      path: "_HiSD"
+      path: "_HiOSD"
       type: pages
     values:
       layout: single
@@ -145,7 +144,7 @@ defaults:
         nav: "Theory"
       mathjax: true
       toc: true
-      _sticky: true
+      toc_sticky: true
   # _GHiSD: for GHiSD documents
   - scope:
       path: "_GHiSD"
@@ -159,7 +158,7 @@ defaults:
         nav: "Theory"
       mathjax: true
       toc: true
-      _sticky: true
+      toc_sticky: true
   # _AHiSD: for AHiSD documents
   - scope:
       path: "_AHiSD"
@@ -173,7 +172,7 @@ defaults:
         nav: "Theory"
       mathjax: true
       toc: true
-      _sticky: true
+      toc_sticky: true
 
 
 # Outputting
