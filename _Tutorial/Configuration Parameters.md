@@ -24,14 +24,13 @@ mathjax: true
 A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems.
       
 ---
-
 ## Configuration Parameters
 The configuration parameters for the `solscape` package are divided into different categories, each focusing on a specific part of the algorithm. Below is an overview of the different categories and the associated parameters.
 
 ### System Parameters
 These parameters are related to the system setup and its general properties: `Dim`, `EnergyFunction`, `Grad`, `AutoDiff`, `NumericalGrad`, `DimerLength`, `SymmetryCheck` and `GradientSystem`.
 
-#### `Dim` (Optional)  
+**`Dim` (Optional)**  
 **Description**  
 System dimension specification.  
 
@@ -46,7 +45,7 @@ System dimension specification.
 
 --- 
 
-#### `EnergyFunction` (Conditional Required)  
+**`EnergyFunction` (Conditional Required)** 
 **Description**  
 Specifies the energy function for gradient systems.  
 
@@ -66,7 +65,7 @@ EnergyFunction = '''
 
 --- 
 
-#### `Grad` (Conditional Required)  
+**`Grad` (Conditional Required)**  
 **Description**  
 Specifies the gradient function for gradient systems or vector field for non-gradient systems.  
 
@@ -90,7 +89,7 @@ Grad = ["x2", "-x1 - 0.1*x2"]
 
 ---
 
-#### `AutoDiff` (Optional)  
+**`AutoDiff` (Optional)**  
 **Description**  
 Enables automatic differentiation of the energy function.  
 
@@ -107,7 +106,7 @@ Enables automatic differentiation of the energy function.
 
 ---
 
-#### `NumericalGrad` (Optional)  
+**`NumericalGrad` (Optional)**  
 **Description**  
 Enables numerical gradient approximation.  
 
@@ -123,7 +122,7 @@ Only active when `Grad` is unspecified
 
 --- 
 
-#### `DimerLength` (Optional)  
+**`DimerLength` (Optional)**  
 **Description**  
 Displacement length for numerical gradient approximations.  
 
@@ -135,7 +134,7 @@ Displacement length for numerical gradient approximations.
 
 ---
 
-#### `SymmetryCheck` (Optional)  
+**`SymmetryCheck` (Optional)**  
 **Description**  
 Verifies gradient system properties via Hessian symmetry.  
 
@@ -148,7 +147,7 @@ Verifies gradient system properties via Hessian symmetry.
 
 --- 
 
-#### `GradientSystem` (Optional)  
+**`GradientSystem` (Optional)**  
 **Description**  
 Explicit declaration of gradient system nature.  
 
@@ -166,7 +165,7 @@ Override automatic detection when known a priori.
 ### Hessian Parameters
 These parameters are related to the Hessian matrix: `ExactHessian` and `HessianDimerLength`.
 
-#### `ExactHessian` (Optional)  
+**`ExactHessian` (Optional)**  
 **Description**  
 Controls Hessian matrix computation method.  
 
@@ -182,7 +181,7 @@ Requires `Grad` as symbolic expressions
 
 --- 
 
-#### `HessianDimerLength` (Optional)  
+**`HessianDimerLength` (Optional)**  
 **Description**  
 Displacement length for numerical Hessian-Vector product approximations. 
 
@@ -197,7 +196,7 @@ Displacement length for numerical Hessian-Vector product approximations.
 ### Eigen Parameters
 These parameters control how the eigen pairs (eigenvalues and eigenvectors) are computed: `EigenMethod`, `EigenMaxIter`, `EigenStepSize` and `PrecisionTol`.
 
-#### `EigenMethod` (Optional)  
+**`EigenMethod` (Optional)**  
 **Description**  
 Eigensolver selection for stability analysis.  
 
@@ -214,7 +213,7 @@ Eigensolver selection for stability analysis.
 
 --- 
 
-#### `EigenMaxIter` (Optional)  
+**`EigenMaxIter` (Optional)**  
 **Description**  
 Maximum iterations for eigenpair computation.  
 
@@ -226,7 +225,7 @@ Maximum iterations for eigenpair computation.
 
 --- 
 
-#### `EigenStepSize` (Optional)  
+**`EigenStepSize` (Optional)**  
 **Description**  
 Discretization step for Euler/power methods.  
 
@@ -238,7 +237,7 @@ Discretization step for Euler/power methods.
 
 --- 
 
-#### `PrecisionTol` (Optional)  
+**`PrecisionTol` (Optional)**  
 **Description**  
 Precision tolerance for eigenvalues. (We treat eigenvalues as 0 if its absolute value less than tolerance.)  
 
@@ -254,7 +253,7 @@ Precision tolerance for eigenvalues. (We treat eigenvalues as 0 if its absolute 
 These parameters are related to improving the speed and efficiency of the algorithm:
 `BBStep`, `Acceleration`, `NesterovChoice`, `NesterovRestart` and `Momentum`.
 
-#### `BBStep` (Optional)  
+**`BBStep` (Optional)**  
 **Description**  
 Enables Barzilai-Borwein adaptive step sizing.  
 
@@ -270,7 +269,7 @@ Enables Barzilai-Borwein adaptive step sizing.
 
 ---
 
-#### `Acceleration` (Optional)  
+**`Acceleration` (Optional)**  
 **Description**  
 Convergence acceleration technique.
 
@@ -284,7 +283,7 @@ Convergence acceleration technique.
 
 --- 
 
-#### `NesterovChoice` (Optional)  
+**`NesterovChoice` (Optional)**  
 **Description**  
 Specifies the acceleration parameter sequence for Nesterov's method.  
 
@@ -300,7 +299,7 @@ Specifies the acceleration parameter sequence for Nesterov's method.
 
 --- 
 
-#### `NesterovRestart` (Optional)  
+**`NesterovRestart` (Optional)**  
 **Description**  
 Iteration interval for Nesterov momentum reset.  
 
@@ -316,7 +315,7 @@ Iteration interval for Nesterov momentum reset.
 
 --- 
 
-#### `Momentum` (Optional)  
+**`Momentum` (Optional)**  
 **Description**  
 Momentum coefficient for heavy ball acceleration.  
 
@@ -335,7 +334,7 @@ Momentum coefficient for heavy ball acceleration.
 ### Solver Parameters
 These parameters are related to the solver process and control the behavior of the HiSD process: `InitialPoint`, `Tolerance`, `SearchArea`, `TimeStep`, `MaxIter`, `SaveTrajectory`, `Verbose` and `ReportInterval`.
 
-#### `InitialPoint` (Required)
+**`InitialPoint` (Required)**
 **Description**  
 The starting coordinates for saddle point search.  
 
@@ -347,7 +346,7 @@ The starting coordinates for saddle point search.
 
 ---
 
-#### `Tolerance` (Optional)  
+**`Tolerance` (Optional)**  
 **Description**  
 Convergence threshold for saddle point iterations.  
 
@@ -358,11 +357,11 @@ Convergence threshold for saddle point iterations.
 `1e-6`  
 
 **Stopping Criterion**  
-‖gradient vector‖2 < Tolerance  
+‖gradient vector‖$_2$ < Tolerance  
 
 --- 
 
-#### `SearchArea` (Optional)  
+**`SearchArea` (Optional)**  
 **Description**  
 Maximum exploration radius from initial point.  
 
@@ -373,11 +372,11 @@ Maximum exploration radius from initial point.
 `1e3`  
 
 **Effect**  
-Terminates search if ‖x - x0‖2 > SearchArea  
+Terminates search if ‖x - x$_0$‖$_2$ > SearchArea  
 
 --- 
 
-#### `TimeStep` (Optional)  
+**`TimeStep` (Optional)**  
 **Description**  
 Temporal discretization interval for dynamics.  
 
@@ -389,7 +388,7 @@ Temporal discretization interval for dynamics.
 
 --- 
 
-#### `MaxIter` (Optional)  
+**`MaxIter` (Optional)**  
 **Description**  
 Maximum number of HiSD iterations permitted.  
 
@@ -401,7 +400,7 @@ Maximum number of HiSD iterations permitted.
 
 --- 
 
-#### `SaveTrajectory` (Optional)  
+**`SaveTrajectory` (Optional)**  
 **Description**  
 Records full optimization path during computation.  
 
@@ -413,7 +412,7 @@ Records full optimization path during computation.
 
 --- 
 
-#### `Verbose` (Optional)  
+**`Verbose` (Optional)**  
 **Description**  
 Controls real-time progress reporting.  
 
@@ -428,7 +427,7 @@ Prints iteration count and gradient norm.
 
 --- 
 
-#### `ReportInterval` (Optional)  
+**`ReportInterval` (Optional)**  
 **Description**  
 Iteration frequency for console output when `Verbose=True`.  
 
@@ -443,7 +442,7 @@ Iteration frequency for console output when `Verbose=True`.
 ### Landscape Parameters
 These parameters are related to constructing and navigating the solution landscape: `MaxIndex`, `MaxIndexGap`, `SameJudgement`, `InitialEigenVectors`, `PerturbationMethod`, `PerturbationRadius`, `PerturbationNumber` and `EigenCombination`.
 
-#### `MaxIndex` (Optional)
+**`MaxIndex` (Optional)**
 **Description**  
 Maximum saddle index (k) to compute.  
 - Index 0: Uses standard SD (Steepest Descent) method  
@@ -460,7 +459,7 @@ Maximum saddle index (k) to compute.
 
 --- 
 
-#### `MaxIndexGap` (Optional) 
+**`MaxIndexGap` (Optional)** 
 **Description**  
 Maximum allowed index difference between parent and child saddle points during hierarchical search.  
 
@@ -477,7 +476,7 @@ If `MaxIndexGap = 2`:
 
 --- 
 
-#### `SameJudgement` (Optional)  
+**`SameJudgement` (Optional)**  
 **Description**  
 Saddle point equivalence criterion.  
 
@@ -495,7 +494,7 @@ def custom_judge(a, b):
 
 ---
 
-#### `InitialEigenVectors` (Optional)  
+**`InitialEigenVectors` (Optional)**  
 **Description**  
 Initial guess for Hessian eigenvectors.
 
@@ -509,7 +508,7 @@ Column vectors must be orthonormal
 
 --- 
 
-#### `PerturbationMethod` (Optional)  
+**`PerturbationMethod` (Optional)**  
 **Description**  
 Statistical distribution for saddle point exploration.  
 
@@ -525,7 +524,7 @@ Statistical distribution for saddle point exploration.
 
 --- 
 
-#### `PerturbationRadius` (Optional)  
+**`PerturbationRadius` (Optional)**  
 **Description**  
 Displacement magnitude for saddle perturbations.  
 
@@ -537,7 +536,7 @@ Displacement magnitude for saddle perturbations.
 
 --- 
 
-#### `PerturbationNumber` (Optional)  
+**`PerturbationNumber` (Optional)**  
 **Description**  
 Number of directional probes per saddle point.  
 
@@ -552,7 +551,7 @@ Actual probes = `2 × PerturbationNumber` (bidirectional)
 
 --- 
 
-#### `EigenCombination` (Optional)  
+**`EigenCombination` (Optional)**  
 **Description**  
 Strategy for eigenvector utilization in perturbations.  
 
@@ -567,8 +566,3 @@ Strategy for eigenvector utilization in perturbations.
 | `min` | Low | Partial |  
 
 
-
-**Default**  
-`1e-5`   
-
---- 
