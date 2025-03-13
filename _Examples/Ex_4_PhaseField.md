@@ -352,7 +352,7 @@ We can draw the solution landscape and save the data.
 
 ```python
 MyLandscape.DrawConnection()
-MyLandscape.Save('Ex_PhaseField','mat')
+MyLandscape.Save('output\Ex_PhaseField','mat')
 # Save the data
 ```
 
