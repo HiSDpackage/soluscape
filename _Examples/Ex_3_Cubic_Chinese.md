@@ -304,7 +304,7 @@ MyLandscape.DrawTrajectory(ContourGridNum=100, ContourGridOut=25, Projection=pro
 
 ```python
 MyLandscape.DrawConnection()
-MyLandscape.Save('Ex_Cubic','mat')
+MyLandscape.Save('output\Ex_PhaseField','mat')
 # Save the data
 ```
 
