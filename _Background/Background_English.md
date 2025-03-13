@@ -4,8 +4,8 @@ permalink: /Background/Background_English
 title: "Background Introduction:Construction of Solution Landscapes for Complex Systems"
 sidebar:
     nav: Theory
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
