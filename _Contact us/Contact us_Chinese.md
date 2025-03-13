@@ -27,7 +27,7 @@ mathjax: true
   国际机器学习中心 (CMLR)。
   
   - 邮箱: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
-  - 主页: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+  - 主页: [Lei ZHANG's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
 
 - **刘宇扬**
 
@@ -36,7 +36,7 @@ mathjax: true
   北京大学数学科学学院 (SMS)。
   
   - 邮箱: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
-  - 主页: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
+  - 主页: [Yuyang LIU's Homepage](https://liuonly1121.github.io/)
 
 ---
 
