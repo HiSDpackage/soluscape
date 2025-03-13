@@ -4,8 +4,8 @@ permalink: /Background/Background_Chinese
 title: "背景介绍：构建复杂系统的解景观"
 sidebar:
     nav: Theory_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
