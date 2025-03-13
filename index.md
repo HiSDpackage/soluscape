@@ -117,7 +117,7 @@ Third-party packages:
 
 ## Examples
 
-Here are some example Jupyter Notebook files in `gallery` directory([within the GitHub repository](https://github.com/HiSDpackage/solscape)) to help you get started quickly:(You can also check in the ["Examples"](https://hisdpackage.github.io/solscape/Examples/Examples_overview) section on the left)
+Here are some example Jupyter Notebook files in `gallery` directory ([within the GitHub repository](https://github.com/HiSDpackage/solscape))  to help you get started quickly:(You can also check in the ["Examples"](https://hisdpackage.github.io/solscape/Examples/Examples_overview) section on the left)
 
 - `Ex_1_Butterfly.ipynb`
 - `Ex_2_MullerBrownPotential.ipynb`
