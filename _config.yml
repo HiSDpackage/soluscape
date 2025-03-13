@@ -89,7 +89,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-toc
 
- toc:
+toc:
   max_level: 3
   
 # Defaults
