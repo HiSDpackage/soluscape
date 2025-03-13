@@ -1,16 +1,16 @@
 ---
 layout: single
-permalink: /Examples/Ex_2_MullerBrownPotential
-title: "Example 2 : M&uuml;ller-Brown Potential"
+permalink: /Examples/Ex_2_MullerBrownPotential_Chinese
+title: "示例2：Müller-Brown 势能"
 sidebar:
-    nav: Examples
+    nav: Examples_Chinese
 toc: true
 toc_sticky: true
 mathjax: true
 
 ---
 
-我们测试由Müller-Brown势函数给出的示例
+我们测试由Müller-Brown势函数给出的示例:
 
 $$
 \begin{aligned}
