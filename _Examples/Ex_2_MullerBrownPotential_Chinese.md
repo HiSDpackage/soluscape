@@ -4,8 +4,8 @@ permalink: /Examples/Ex_2_MullerBrownPotential_Chinese
 title: "示例2：Müller-Brown 势能"
 sidebar:
     nav: Examples_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
