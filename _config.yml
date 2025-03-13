@@ -23,7 +23,7 @@ email: liuyuyang@stu.pku.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD).
 baseurl: "/solscape" # the subpath of your site, e.g. /blog
-url: "https://hisdpackage.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hisdpackage.github.io/" # the base hostname & prool for your site, e.g. http://example.com
 atom_feed:
   hide: true
 
@@ -52,7 +52,9 @@ kramdown:
   highlighter: rouge
   # syntax_highlighter: rouge // new version, github pages need the old one
 permalink   : date
-
+toc:
+  max_level: 3
+  
 #comments:
 # provider: "disqus"
 # disqus:
@@ -101,8 +103,8 @@ defaults:
       sidebar:
         nav: "Tutorial"
       mathjax: true
-      toc: true
-      toc_sticky: true  
+      : true
+      _sticky: true  
    # _Examples: for Examples documents
   - scope:
       path: "_Examples"
@@ -115,8 +117,8 @@ defaults:
       sidebar:
         nav: "Examples"
       mathjax: true
-      toc: true
-      toc_sticky: true  
+      : true
+      _sticky: true  
   # _Background: for Background documents
   - scope:
       path: "_Background"
@@ -129,8 +131,8 @@ defaults:
       sidebar:
         nav: "Theory"
       mathjax: true
-      toc: true
-      toc_sticky: true    
+      : true
+      _sticky: true    
   # _HiOSD: for HiSD documents
   - scope:
       path: "_HiSD"
@@ -143,8 +145,8 @@ defaults:
       sidebar:
         nav: "Theory"
       mathjax: true
-      toc: true
-      toc_sticky: true
+      : true
+      _sticky: true
   # _GHiSD: for GHiSD documents
   - scope:
       path: "_GHiSD"
@@ -157,8 +159,8 @@ defaults:
       sidebar:
         nav: "Theory"
       mathjax: true
-      toc: true
-      toc_sticky: true
+      : true
+      _sticky: true
   # _AHiSD: for AHiSD documents
   - scope:
       path: "_AHiSD"
@@ -171,8 +173,8 @@ defaults:
       sidebar:
         nav: "Theory"
       mathjax: true
-      toc: true
-      toc_sticky: true
+      : true
+      _sticky: true
 
 
 # Outputting
