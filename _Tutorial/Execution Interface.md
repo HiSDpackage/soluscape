@@ -79,6 +79,7 @@ landscape.RestartFromPoint(
 Restarts computation from existing saddle point.  
 
 **Parameters**  
+
 | Name | Type | Constraints | Description |
 |------|------|-------------|-------------|
 | `BeginID` | `int` | `0 ≤ begin_id < len(SaddleList)` | Valid saddle point ID |
@@ -101,6 +102,7 @@ landscape.RestartFromSaddle(
 Visualizes search trajectories and energy landscapes for systems. Supports contour overlays, style customization, and high-D projections.
 
 **Parameters**  
+
 | Name | Type | Constraints | Description & Default Value|
 |------|------|-------------|-------------|
 | `DetailedTraj` | `bool` | Requires saved trajectory data | Show full iteration path <br>(default: `False`) |
@@ -165,6 +167,7 @@ landscape.DrawTrajectory(
 Visualizes connectivity between saddle points in the solution landscape. Displays markers for saddle nodes and search paths connecting them. Supports custom styling of points and connection lines.
 
 **Parameters**  
+
 | Name | Type | Default Value | Description |
 |------|------|-------------|-------------|
 | `Title` | `str` | `"The Connection of Saddle Points"` | Figure title text |
@@ -190,6 +193,7 @@ landscape.DrawConnection(
 Persists calculation results to persistent storage with specified serialization format.  
 
 **Parameters**  
+
 | Name | Type | Constraints | Description |
 |------|------|-------------|-------------|
 | `filepath` | `str` | Valid filesystem path | Target path without extension |
