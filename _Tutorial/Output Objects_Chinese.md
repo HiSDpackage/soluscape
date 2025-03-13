@@ -19,7 +19,7 @@ mathjax: true
 *      Copyright:  Copyright (c) 2024-2025, Lei ZHANG, Yuyang LIU. All rights reserved.
 -->
       
-这是一个用高阶鞍点动力学（High-index Saddle Dynamics,HiSD）构建解景观的Python包。该工具包支持在动力系统中数值计算鞍点及其层次结构。
+一个基于高阶鞍点动力学（HiSD）构建解景观的Python工具包。该工具包支持动力系统中鞍点的数值计算及其层级结构分析，简化了鞍点搜索流程，提供灵活的参数设置和丰富的可视化功能。
 
       
 ## 输出对象
