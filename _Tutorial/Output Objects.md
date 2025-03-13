@@ -84,5 +84,5 @@ first_search = landscape.DetailRecord[0]
 plt.plot(first_search[2][:,0], first_search[2][:,1])
 ```
 
----
+
 
