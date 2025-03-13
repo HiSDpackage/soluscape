@@ -4,8 +4,8 @@ permalink: /Examples/Examples_overview_Chinese
 title: "示例"
 sidebar:
     nav: Examples_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
