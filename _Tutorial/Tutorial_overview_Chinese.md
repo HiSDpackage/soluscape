@@ -12,19 +12,19 @@ mathjax: true
 # HiSD Package: solscape V-1.0
 
       
-A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems.
+这是一个用高阶鞍点动力学（High-index Saddle Dynamics,HiSD）构建解景观的Python包。该工具包支持在动力系统中数值计算鞍点及其层次结构。
       
 ---
 
-## 教程概览
+## 教程概要
 这是HiSD包 `solscape-1.0`的教程，包括以下几个部分：
 
-安装与导入
+**安装与导入**
 
-配置参数
+**配置参数**
 
-执行接口
+**执行接口**
 
-输出对象
+**输出对象**
 
-依赖包
+**依赖包**
