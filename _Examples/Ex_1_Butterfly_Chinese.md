@@ -1,9 +1,9 @@
 ---
 layout: single
-permalink: /Examples/Ex_1_Butterfly
+permalink: /Examples/Ex_1_Butterfly_Chinese
 title: "Example 1 : Butterfly"
 sidebar:
-    nav: Examples
+    nav: Examples_Chinese
 toc: true
 toc_sticky: true
 mathjax: true
