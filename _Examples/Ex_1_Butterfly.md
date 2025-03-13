@@ -295,7 +295,7 @@ We can also draw the solution landscape and save the data.
 
 ```python
 MyLandscape.DrawConnection()
-MyLandscape.Save('Ex_Butterfly')
+MyLandscape.Save('output\Ex_Butterfly')
 # Save the data
 ```
 
@@ -303,4 +303,193 @@ MyLandscape.Save('Ex_Butterfly')
     
 ![png](Ex_1_Butterfly_files/Ex_1_Butterfly_13_0.png)
     
+
+
+Then, we save the search trajectory.
+
+
+```python
+import json
+
+detail = MyLandscape.DetailRecord
+output = {
+            "Start ID": [row[1] for row in detail],
+            "End ID": [row[0] for row in detail],
+            "Path Positions": [row[2].tolist() for row in detail],
+            "Path Times": [row[3].tolist() for row in detail]
+        }
+
+with open('output\Ex_ButterflyDetail.json', 'w') as f:
+    json.dump(output, f)
+```
+
+Moreover, we can do more post-processing using the output data. We will generate the motiion graph of search trajectory as an example.
+
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from matplotlib.colors import Colormap
+
+def animateSL(fig: plt.Figure,
+              ax: plt.Axes,
+              saddleinfo: dict,
+              trajinfo: dict,
+              ColorsMI: Colormap = plt.get_cmap("tab10"),
+              ColorTraj: list|str = "blue",
+              dt_per_frame: float = 0.2,
+              fps: int = None):
+    IDs: list[int] = saddleinfo["IDs"] # Tags of saddles
+    coords: list[np.ndarray] = saddleinfo["coords"] # Coordinates
+    MIs: list[int] = saddleinfo["MIs"] # Morse indices
+    parentIDs: list[list[int]] = saddleinfo["parentIDs"] # Parent saddles
+
+    trajectories: list[np.ndarray] = trajinfo["trajectories"] # Trajectories
+    times: list[np.ndarray] = trajinfo["times"] # times
+
+    startIDs: list[int] = trajinfo["startIDs"] # Starting saddle"s tag
+    endIDs: list[int] = trajinfo["endIDs"] # Ending saddle"s tag
+
+    N_traj = len(trajectories) # Number of trajectories
+    assert N_traj == len(times) == len(startIDs) == len(endIDs)
+    for i, traj, time in zip(range(N_traj), trajectories, times):
+        assert len(traj) == len(time), f"Different length of {i}-th trajectory and time"
+
+    trajectoriesFrom: list[list[int]] = [[] for _ in range(len(IDs))]
+    for i, startID in enumerate(startIDs):
+        if startID >= 0:
+            trajectoriesFrom[startID].append(i)
+
+    colorSaddle: list[tuple] = [ColorsMI(MI) for MI in MIs]
+    if isinstance(ColorTraj, str):
+        colorTraj: list[str] = [ColorTraj] * N_traj
+
+    ZORDER_TRAJ = 100000
+    ZORDER_SADDLE = 200000
+    ZORDER_TEXT = 300000
+
+    if fps is None:
+        fps = 1 / dt_per_frame
+    
+    lentraj = [len(traj) for traj in trajectories]
+
+    saddleArtists = [ax.plot([], [], "o", color=colorSaddle[i], zorder=ZORDER_SADDLE)[0] for i in range(len(IDs))]
+    trajArtists = [ax.plot([], [], color=colorTraj[i], zorder=ZORDER_TRAJ)[0] for i in range(N_traj)]
+    startArtists = [ax.plot([], [], color=colorTraj[i], zorder=ZORDER_TRAJ, linestyle="--")[0] for i in range(N_traj)]
+    endArtists = [ax.plot([], [], color=colorTraj[i], zorder=ZORDER_TRAJ, linestyle="--")[0] for i in range(N_traj)]
+
+    _awakeMoment = np.ones(len(IDs)) * np.inf # Activation moment of each saddle
+    _pendingTraj = []
+
+    plotSaddle = lambda id: saddleArtists[id].set_data([coords[id][0]], [coords[id][1]])
+    startTraj = lambda i: startArtists[i].set_data([coords[startIDs[i]][0], trajectories[i][0, 0]],
+                                                   [coords[startIDs[i]][1], trajectories[i][0, 1]])
+    endTraj = lambda i: endArtists[i].set_data([trajectories[i][-1, 0], coords[endIDs[i]][0]],
+                                               [trajectories[i][-1, 1], coords[endIDs[i]][1]])
+
+    def init_frame():
+        nonlocal _awakeMoment, _pendingTraj
+        for id, parentID in enumerate(parentIDs):
+            if -1 in parentID:
+                plotSaddle(id)
+                _awakeMoment[id] = 0.0
+                for i in trajectoriesFrom[id]:
+                    startTraj(i)
+                    _pendingTraj.append(i)
+        return saddleArtists + trajArtists + startArtists + endArtists
+
+    def frame_generator():
+        nonlocal _awakeMoment, _pendingTraj
+        pointer = np.zeros(N_traj, dtype=int)
+        _pendingSaddle = []
+        _pendingTraj_temp = []
+        current_time = 0.0
+        while _pendingTraj:
+            current_time += dt_per_frame
+            while _pendingTraj or _pendingSaddle:
+                if _pendingTraj:
+                    i = _pendingTraj.pop(0)
+                    startID = startIDs[i]
+                    while pointer[i] < lentraj[i] and times[i][pointer[i]] + _awakeMoment[startID] <= current_time:
+                        pointer[i] += 1
+                    trajArtists[i].set_data(trajectories[i][:pointer[i], 0], trajectories[i][:pointer[i], 1])
+                    if pointer[i] == lentraj[i]:
+                        endTraj(i)
+                        endID = endIDs[i]
+                        if not endID in _pendingSaddle:
+                            _pendingSaddle.append(endID)
+                        if _awakeMoment[endID] > times[i][-1] + _awakeMoment[startID]:
+                            _awakeMoment[endID] = times[i][-1] + _awakeMoment[startID]
+                            _pendingSaddle.sort(key=lambda id: _awakeMoment[id])
+                    else:
+                        _pendingTraj_temp.append(i)
+                else:
+                    id = _pendingSaddle.pop(0)
+                    plotSaddle(id)
+                    _pendingTraj += trajectoriesFrom[id]
+            yield saddleArtists + trajArtists + startArtists + endArtists
+            _pendingTraj = _pendingTraj_temp.copy()
+            _pendingTraj_temp.clear()
+    
+    return FuncAnimation(fig,
+                         lambda frame: frame,
+                         frame_generator,
+                         init_frame,
+                         blit=True,
+                         interval=dt_per_frame * 1000,
+                         cache_frame_data=False)
+```
+
+
+```python
+import json
+dpi: float = 100
+xlim = [-3, 3]
+ylim = [-2, 3]
+
+fig, ax = plt.subplots(dpi=dpi)
+ax.set_xlim(xlim)
+ax.set_ylim(ylim)
+ax.set_aspect("equal")
+
+x, y = np.meshgrid(np.linspace(xlim[0], xlim[1], 100), np.linspace(ylim[0], ylim[1], 100))
+z = x**4 - 1.5*x**2*y**2 + y**4 - 2*y**3 + y**2 + x**2*y - 2*x**2 # SPECIFIC
+
+contourf_args: dict = {"levels": 20}
+if "levels" in contourf_args and contourf_args["levels"] >= 0:
+    ax.contourf(x, y, z, **contourf_args)
+```
+
+
+    
+![png](Ex_1_Butterfly_files/Ex_1_Butterfly_18_0.png)
+    
+
+
+
+```python
+with open("output\Ex_Butterfly.json", "r") as f:
+    saddle_data = json.load(f) # Load the data
+saddleinfo = {"IDs": saddle_data["SaddleID"],
+              "coords": np.array(saddle_data["Position"])[:, :, 0],
+              "MIs": saddle_data["MorseIndex"],
+              "parentIDs": saddle_data["FatherSet"]}
+
+with open("output\Ex_ButterflyDetail.json", "r") as f:
+    traj_data = json.load(f) # Load the data
+trajinfo = {"trajectories": [np.array(traj) for traj in traj_data["Path Positions"]],
+            "times": [time for time in traj_data["Path Times"]],
+            "startIDs": traj_data["Start ID"],
+            "endIDs": traj_data["End ID"]}
+
+ani = animateSL(fig, ax, saddleinfo, trajinfo, dt_per_frame=0.02)
+```
+
+We can export the animation to different file types.
+
+
+```python
+ani.save("output\Ex_Butterfly.mp4", writer="ffmpeg") # Must install ffmpeg
+```
+
 
