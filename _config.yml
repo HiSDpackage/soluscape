@@ -33,7 +33,6 @@ repository_tree: main
 # Build settings
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-theme: null
 search: true
 search_full_content: true
 
