@@ -1,0 +1,217 @@
+main:
+  - title: "StartPage"
+    url: /
+  - title: "GitHub"
+    url: https://github.com/liuonly1121/hisdpackage
+  - title: "English Version"
+    url: /index
+  - title: "中文版"
+    url: /index_Chinese
+
+
+
+# documentation links
+docs:
+  - title: "Tutorial"
+    url: /Tutorial/Tutorial_overview
+    children:
+      - title: "Installation & Import"
+        url: /Tutorial/Installation & Import
+      - title: "Configuration Parameters"
+        url: /Tutorial/Configuration Parameters
+      - title: "Execution Interface"
+        url: /Tutorial/Execution Interface
+      - title: "Output Objects"
+        url: /Tutorial/Output Objects
+      - title: "Package Requirements"
+        url: /Tutorial/Package Requirements   
+        
+  - title: "Examples"
+    url: /Examples/Examples_overview
+    children:
+      - title: "Example 1 : Butterfly"
+        url: /Examples/Ex_1_Butterfly
+      - title: "Example 2 : M&uuml;ller-Brown Potential"
+        url: /Examples/Ex_2_MullerBrownPotential
+      - title: "Example 3 : Cubic"
+        url: /Examples/Ex_3_Cubic
+      - title: "Example 4 : Phase Field"
+        url: /Examples/Ex_4_PhaseField
+        
+  - title: "Theory"
+    url: /Background/Background_English
+    children:
+      - title: "Background Introduction"
+        url: /Background/Background_English
+      - title: "HiOSD Theory Overview"
+        url: /HiOSD/HiOSD_English
+      - title: "GHiSD Theory Overview"
+        url: /GHiSD/GHiSD_English
+      - title: "AHiSD Theory Overview"
+        url: /AHiSD/AHiSD_English
+
+  - title: "Contact us"
+    url: /Contact us/Contact us_English
+
+
+
+docs_Chinese:
+  - title: "教程"
+    url: /Tutorial/Tutorial_overview_Chinese
+    children:
+      - title: "安装与导入"
+        url: /Tutorial/Installation & Import_Chinese
+      - title: "配置参数"
+        url: /Tutorial/Configuration Parameters_Chinese
+      - title: "执行接口"
+        url: /Tutorial/Execution Interface_Chinese
+      - title: "输出对象"
+        url: /Tutorial/Output Objects_Chinese
+      - title: "依赖包"
+        url: /Tutorial/Package Requirements_Chinese   
+        
+  - title: "示例"
+    url: /Examples/Examples_overview
+    children:
+      - title: "示例1：蝴蝶"
+        url: /Examples/Ex_1_Butterfly_Chinese
+      - title: "示例2：M&uuml;ller-Brown 势能"
+        url: /Examples/Ex_2_MullerBrownPotential_Chinese
+      - title: "示例3：立方体"
+        url: /Examples/Ex_3_Cubic_Chinese
+      - title: "示例4：相场模型"
+        url: /Examples/Ex_4_PhaseField_Chinese
+        
+  - title: "理论"
+    url: /Background/Background_Chinese
+    children:
+      - title: "背景介绍"
+        url: /Background/Background_Chinese
+      - title: "HiOSD 理论概要"
+        url: /HiOSD/HiOSD_Chinese
+      - title: "GHiSD 理论概要"
+        url: /GHiSD/GHiSD_Chinese
+      - title: "AHiSD 理论概要"
+        url: /AHiSD/AHiSD_Chinese
+
+  - title: "联系我们"
+    url: /Contact us/Contact us_Chinese
+
+
+        
+Tutorial:
+  - title: "Back to main"
+    url: /index
+  - title: "Tutorial"
+    url: /Tutorial/Tutorial_overview
+    children:
+      - title: "Installation & Import"
+        url: /Tutorial/Installation & Import
+      - title: "Configuration Parameters"
+        url: /Tutorial/Configuration Parameters
+      - title: "Execution Interface"
+        url: /Tutorial/Execution Interface
+      - title: "Output Objects"
+        url: /Tutorial/Output Objects
+      - title: "Package Requirements"
+        url: /Tutorial/Package Requirements        
+
+
+        
+Tutorial_Chinese:
+  - title: "回到首页"
+    url: /index_Chinese
+  - title: "教程"
+    url: /Tutorial/Tutorial_overview_Chinese
+    children:
+      - title: "安装与导入"
+        url: /Tutorial/Installation & Import_Chinese
+      - title: "配置参数"
+        url: /Tutorial/Configuration Parameters_Chinese
+      - title: "执行接口"
+        url: /Tutorial/Execution Interface_Chinese
+      - title: "输出对象"
+        url: /Tutorial/Output Objects_Chinese
+      - title: "依赖包"
+        url: /Tutorial/Package Requirements_Chinese      
+
+
+        
+Examples:
+  - title: "Back to main"
+    url: /index
+  - title: "Examples"
+    url: /Examples/Examples_overview
+    children:
+      - title: "Example 1 : Butterfly"
+        url: /Examples/Ex_1_Butterfly
+      - title: "Example 2 : M&uuml;ller-Brown Potential"
+        url: /Examples/Ex_2_MullerBrownPotential
+      - title: "Example 3 : Cubic"
+        url: /Examples/Ex_3_Cubic
+      - title: "Example 4 : Phase Field"
+        url: /Examples/Ex_4_PhaseField
+
+
+
+Examples_Chinese:
+  - title: "回到首页"
+    url: /index_Chinese
+  - title: "示例"
+    url: /Examples/Examples_overview_Chinese
+    children:
+      - title: "示例1：蝴蝶"
+        url: /Examples/Ex_1_Butterfly_Chinese
+      - title: "示例2：M&uuml;ller-Brown 势能"
+        url: /Examples/Ex_2_MullerBrownPotential_Chinese
+      - title: "示例3：立方体"
+        url: /Examples/Ex_3_Cubic_Chinese
+      - title: "示例4：相场模型"
+        url: /Examples/Ex_4_PhaseField_Chinese
+
+
+
+Theory:
+  - title: "Back to main"
+    url: /index
+  - title: "Theory"
+    url: /Background/Background_English
+    children:
+      - title: "Background Introduction"
+        url: /Background/Background_English
+      - title: "HiOSD Theory Overview"
+        url: /HiOSD/HiOSD_English
+      - title: "GHiSD Theory Overview"
+        url: /GHiSD/GHiSD_English
+      - title: "AHiSD Theory Overview"
+        url: /AHiSD/AHiSD_English
+
+
+
+
+Theory_Chinese:
+  - title: "回到首页"
+    url: /index_Chinese
+  - title: "Theory"
+    url: /Background/Background_Chinese
+    children:
+      - title: "背景介绍"
+        url: /Background/Background_Chinese
+      - title: "HiOSD 理论概要"
+        url: /HiOSD/HiOSD_Chinese
+      - title: "GHiSD 理论概要"
+        url: /GHiSD/GHiSD_Chinese
+      - title: "AHiSD 理论概要"
+        url: /AHiSD/AHiSD_Chinese
+
+
+        
+Contact us:
+  - title: "Back to main"
+    url: /index
+
+
+
+Contact us_Chinese:
+  - title: "回到首页"
+    url: /index_Chinese
