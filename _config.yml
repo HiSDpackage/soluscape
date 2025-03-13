@@ -87,10 +87,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-include-cache
-  - jekyll-toc
 
-toc:
-  max_level: 3
   
 # Defaults
 defaults:
