@@ -1,9 +1,9 @@
 ---
 layout: single
-permalink: /Examples/Ex_4_PhaseField
-title: "Example 4 : Phase Field"
+permalink: /Examples/Ex_4_PhaseField_Chinese
+title: "示例4：相场模型"
 sidebar:
-    nav: Examples
+    nav: Examples_Chinese
 toc: true
 toc_sticky: true
 mathjax: true
