@@ -11,9 +11,12 @@ mathjax: true
 ---
 
 We test the example whose heatmap resembles a butterfly shape and the energy function is shown by 
+
+$$
 \begin{aligned}
 E(x,y)=x^{4}-1.5x^{2}y^{2}+y^{4}-2y^{3}+y^{2}+x^{2}y-2x^{2}.
 \end{aligned}
+$$
 
 First, we add the path of the `solscape-1.0` directory to the system path.
 
