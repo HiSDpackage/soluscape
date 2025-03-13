@@ -1,16 +1,16 @@
 ---
 layout: single
-permalink: /Examples/Ex_3_Cubic
-title: "Example 3 : Cubic"
+permalink: /Examples/Ex_3_Cubic_Chinese
+title: "示例3：立方体"
 sidebar:
-    nav: Examples
+    nav: Examples_Chinese
 toc: true
 toc_sticky: true
 mathjax: true
 
 ---
 
-我们测试了一个示例，其能量函数如下所示
+我们测试了一个示例，其能量函数如下所示:
 \begin{aligned}
 E(x)=\sum_{j=1}^{n}j(x_{j}^{2}-1)^{2}.
 \end{aligned}
