@@ -29,9 +29,9 @@ mathjax: true
 ## 致谢
 
 特别感谢以下贡献者：
-- **肖子翔** (网站主要作者):[xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
-- **苏华**:[suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
-- **赵进**:[zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
+- **肖子翔** (网站主要作者): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
+- **苏华**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
+- **赵进**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
 
 他们的贡献对本工具包的开发至关重要。
 
