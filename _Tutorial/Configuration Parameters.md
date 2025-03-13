@@ -205,6 +205,7 @@ Eigensolver selection for stability analysis.
 `str`
 
 **Options**  
+
 | Method   | System Type      | Description                          |
 |----------|------------------|--------------------------------------|
 | `lobpcg` | Gradient (Default) | Locally Optimal Block PCG           |
@@ -516,6 +517,7 @@ Statistical distribution for saddle point exploration.
 `str`  
 
 **Options**  
+
 | Value | Description |  
 |-------|-------------|  
 | `uniform` (Default) | Uniform sampling |  
@@ -558,6 +560,7 @@ Strategy for eigenvector utilization in perturbations.
 `str`  
 
 **Options**  
+
 | Value | Computational Cost | Completeness |  
 |-------|--------------------|--------------|  
 | `all` (Default) | High | Exhaustive |  
