@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /
+permalink: /index_Chinese
 title: "solscape-1.0: 使用高阶鞍点动力学（HiSD）构建解景观"
 excerpt: "快速入门指南"
 sidebar:
