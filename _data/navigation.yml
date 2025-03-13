@@ -43,7 +43,7 @@ docs:
     children:
       - title: "Background Introduction"
         url: /Background/Background_English
-      - title: "HiOSD Theory Overview"
+      - title: "HiSD Theory Overview"
         url: /HiOSD/HiOSD_English
       - title: "GHiSD Theory Overview"
         url: /GHiSD/GHiSD_English
