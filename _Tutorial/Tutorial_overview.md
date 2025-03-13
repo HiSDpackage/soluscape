@@ -17,7 +17,7 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
 ---
 
 ## Tutorial Overview
-This is a tutorial for the HiSD package, which includes the following sections:
+This is a tutorial for the HiSD package `solscape-1.0`, which includes the following sections:
 Installation & Import
 Configuration Parameters
 Execution Interface
