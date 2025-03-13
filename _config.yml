@@ -52,8 +52,7 @@ kramdown:
   highlighter: rouge
   # syntax_highlighter: rouge // new version, github pages need the old one
 permalink   : date
-toc:
-  max_level: 3
+
   
 #comments:
 # provider: "disqus"
@@ -88,7 +87,11 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-include-cache
+  - jekyll-toc
 
+ toc:
+  max_level: 3
+  
 # Defaults
 defaults:
   # _Tutorial: for Tutorial documents
