@@ -58,6 +58,7 @@ See `Output Objects` for more details.
 Restarts computation from specified coordinates.  
 
 **Parameters**  
+
 | Name | Type | Constraints | Description |
 |------|------|-------------|-------------|
 | `RestartPoint` | `list` or `numpy.ndarray` (1D) | Must match system dimension | Initial position vector |
