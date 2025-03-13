@@ -62,7 +62,7 @@ include:
   - _Tutorial
   - _Examples
   - _Background
-  - _HiOSD
+  - _HiSD
   - _GHiSD
   - _AHiSD
   - _Contact us
@@ -131,9 +131,9 @@ defaults:
       mathjax: true
       toc: true
       toc_sticky: true    
-  # _HiOSD: for HiOSD documents
+  # _HiOSD: for HiSD documents
   - scope:
-      path: "_HiOSD"
+      path: "_HiSD"
       type: pages
     values:
       layout: single
