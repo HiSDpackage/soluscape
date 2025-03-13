@@ -45,18 +45,3 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
-
-document.addEventListener("DOMContentLoaded", function() {
-  // 查找所有目录项
-  let tocItems = document.querySelectorAll('.toc__item');
-  tocItems.forEach(function(item) {
-    // 获取该目录项的级别
-    let level = parseInt(item.classList[1].split('--')[1], 10);
-    
-    // 如果目录项级别是 4，移除它
-    if (level === 4) {
-      item.style.display = 'none';
-    }
-  });
-});
-
