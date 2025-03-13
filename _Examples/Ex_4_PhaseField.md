@@ -4,8 +4,8 @@ permalink: /Examples/Ex_4_PhaseField
 title: "Example 4 : Phase Field"
 sidebar:
     nav: Examples
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
