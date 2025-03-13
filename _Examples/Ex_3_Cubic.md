@@ -4,8 +4,8 @@ permalink: /Examples/Ex_3_Cubic
 title: "Example 3 : Cubic"
 sidebar:
     nav: Examples
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
