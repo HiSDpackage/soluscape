@@ -44,7 +44,7 @@ docs:
       - title: "Background Introduction"
         url: /Background/Background_English
       - title: "HiSD Theory Overview"
-        url: /HiOSD/HiOSD_English
+        url: /HiSD/HiSD_English
       - title: "GHiSD Theory Overview"
         url: /GHiSD/GHiSD_English
       - title: "AHiSD Theory Overview"
@@ -87,8 +87,8 @@ docs_Chinese:
     children:
       - title: "背景介绍"
         url: /Background/Background_Chinese
-      - title: "HiOSD 理论概要"
-        url: /HiOSD/HiOSD_Chinese
+      - title: "HiSD 理论概要"
+        url: /HiSD/HiSD_Chinese
       - title: "GHiSD 理论概要"
         url: /GHiSD/GHiSD_Chinese
       - title: "AHiSD 理论概要"
@@ -179,8 +179,8 @@ Theory:
     children:
       - title: "Background Introduction"
         url: /Background/Background_English
-      - title: "HiOSD Theory Overview"
-        url: /HiOSD/HiOSD_English
+      - title: "HiSD Theory Overview"
+        url: /HiSD/HiSD_English
       - title: "GHiSD Theory Overview"
         url: /GHiSD/GHiSD_English
       - title: "AHiSD Theory Overview"
@@ -197,8 +197,8 @@ Theory_Chinese:
     children:
       - title: "背景介绍"
         url: /Background/Background_Chinese
-      - title: "HiOSD 理论概要"
-        url: /HiOSD/HiOSD_Chinese
+      - title: "HiSD 理论概要"
+        url: /HiSD/HiSD_Chinese
       - title: "GHiSD 理论概要"
         url: /GHiSD/GHiSD_Chinese
       - title: "AHiSD 理论概要"
