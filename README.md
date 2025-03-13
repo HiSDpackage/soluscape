@@ -104,7 +104,7 @@ Third-party packages:
 
 ## Examples
 
-Here are some example Jupyter Notebook files to help you get started quickly:
+Here are some example Jupyter Notebook files in `gallery` directory to help you get started quickly:
 
 - `Ex_1_Butterfly.ipynb`
 - `Ex_2_MullerBrownPotential.ipynb`
@@ -113,14 +113,29 @@ Here are some example Jupyter Notebook files to help you get started quickly:
 
 ## Contact
 
-If you are interested in solscape or want to contribute, feel free to contact us!
+If you are interested in `solscape` or want to contribute, please feel free to contact us!
 
-**Author**: Lei ZHANG
-**Email**: pkuzhangl@pku.edu.cn
+### Authors
 
-**Author**: Yuyang LIU
-**Email**: liuyuyang@stu.pku.edu.cn
+- **Lei Zhang**  
+  - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
+  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+
+- **Yuyang Liu**  
+  - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
+  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
 ---
 
-Thank you for using solscape! Feedback and suggestions are always welcome!
+### Acknowledgements
+
+Special thanks to the following contributors:
+- **Zixiang Xiao** (Main website author)
+- **Hua Su**
+- **Jin Zhao**
+
+Their contributions have been invaluable in the development of this package.
+
+---
+
+Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
