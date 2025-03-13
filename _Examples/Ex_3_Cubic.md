@@ -270,7 +270,7 @@ MyLandscape.Run()
 
     
 
-......([For the complete results, please refer to the file in the GitHub repository]())
+......([For the complete results, please refer to the file in the GitHub repository](https://github.com/HiSDpackage/solscape/blob/main/_Examples/Ex_3_Cubic.ipynb))
 
     
 
