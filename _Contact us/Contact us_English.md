@@ -17,7 +17,7 @@ If you are interested in `solscape` or want to contribute, please feel free to c
 
 ## Authors
 
-- **Lei Zhang**
+- **Lei ZHANG**
 
   Boya Distinguished Professor
 
@@ -30,7 +30,7 @@ If you are interested in `solscape` or want to contribute, please feel free to c
   - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
   - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
 
-- **Yuyang Liu**
+- **Yuyang LIU**
   
   Ph.D. Candidate
   
@@ -44,9 +44,9 @@ If you are interested in `solscape` or want to contribute, please feel free to c
 ## Acknowledgements
 
 Special thanks to the following contributors:
-- **Zixiang Xiao** (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
-- **Hua Su**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
-- **Jin Zhao**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
+- **Zixiang XIAO** (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
+- **Hua SU**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
+- **Jin ZHAO**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
 
 Their contributions have been invaluable in the development of this package.
 
