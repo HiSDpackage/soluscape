@@ -4,8 +4,8 @@ permalink: /Examples/Examples_overview
 title: "Examples"
 sidebar:
     nav: Examples
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
