@@ -215,4 +215,4 @@ Contains dictionary with aligned indices for:
 All data structures maintain identical ordering:  
 `SaddleID[n]` ↔ `Position[n]` ↔ `MorseIndex[n]` ↔ `FatherSet[n]`
 
----
+
