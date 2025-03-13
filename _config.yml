@@ -87,7 +87,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-include-cache
-
+  - jekyll-toc
   
 # Defaults
 defaults:
