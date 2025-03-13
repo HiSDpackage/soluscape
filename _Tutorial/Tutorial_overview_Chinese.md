@@ -10,7 +10,14 @@ mathjax: true
 ---
 
 # HiSD Package: solscape V-1.0
-
+<!--
+*        Version:  1.0.0
+*        Created:  2024-12-25
+*        Last Modified:  2025-03-13
+*
+*         Author:  Yuyang LIU <liuyuyang@stu.pku.edu.cn>
+*      Copyright:  Copyright (c) 2024-2025, Lei ZHANG, Yuyang LIU. All rights reserved.
+-->
       
 这是一个用高阶鞍点动力学（High-index Saddle Dynamics,HiSD）构建解景观的Python包。该工具包支持在动力系统中数值计算鞍点及其层次结构。
       
