@@ -4,8 +4,8 @@ permalink: /Examples/Ex_1_Butterfly
 title: "Example 1 : Butterfly"
 sidebar:
     nav: Examples
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
