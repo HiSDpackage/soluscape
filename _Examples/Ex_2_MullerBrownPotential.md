@@ -4,8 +4,8 @@ permalink: /Examples/Ex_2_MullerBrownPotential
 title: "Example 2 : M&uuml;ller-Brown Potential"
 sidebar:
     nav: Examples
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
