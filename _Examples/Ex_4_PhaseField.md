@@ -347,7 +347,7 @@ MyLandscape.Run()
 
 
 
-We can also draw the solution landscape and save the data.
+We can draw the solution landscape and save the data.
 
 
 ```python
