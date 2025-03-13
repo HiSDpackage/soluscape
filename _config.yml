@@ -97,7 +97,6 @@ defaults:
       type: pages
     values:
       layout: single
-      classes: wide
       author_profile: false
       share: false
       comments: true
@@ -106,7 +105,6 @@ defaults:
       mathjax: true
       toc: true
       toc_max_level: 3
-      toc_min_level: 1
       toc_sticky: true  
    # _Examples: for Examples documents
   - scope:
