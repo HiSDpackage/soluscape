@@ -104,6 +104,7 @@ defaults:
         nav: "Tutorial"
       mathjax: true
       toc: true
+      toc_max_level: 3
       toc_sticky: true  
    # _Examples: for Examples documents
   - scope:
