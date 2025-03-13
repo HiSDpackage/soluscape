@@ -22,12 +22,12 @@ title                    : "HiSD Package: solscape-1.0"
 email: liuyuyang@stu.pku.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD).
-baseurl: "/attempt" # the subpath of your site, e.g. /blog
-url: "https://hisdpackage.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/solscape" # the subpath of your site, e.g. /blog
+url: "https://hisdpackage.github.io/" # the base hostname & prool for your site, e.g. http://example.com
 atom_feed:
   hide: true
 
-repository: HiSDpackage/attempt
+repository: HiSDpackage/solscape
 repository_tree: main
 
 # Build settings
@@ -131,9 +131,9 @@ defaults:
       mathjax: true
       toc: true
       toc_sticky: true    
-  # _HiOSD: for HiOSD documents
+  # _HiOSD: for HiSD documents
   - scope:
-      path: "_HiOSD"
+      path: "_HiSD"
       type: pages
     values:
       layout: single
