@@ -125,5 +125,5 @@ Here are some example Jupyter Notebook files in `gallery` directory ([within the
 - `Ex_4_PhaseField.ipynb`
 
 
-
+---
 Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
