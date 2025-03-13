@@ -4,8 +4,8 @@ permalink: /Examples/Ex_4_PhaseField_Chinese
 title: "示例4：相场模型"
 sidebar:
     nav: Examples_Chinese
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 mathjax: true
 
 ---
