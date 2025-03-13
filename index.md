@@ -10,9 +10,10 @@ toc_sticky: true
 mathjax: true
 
 ---
-# HiSD Package: solscape-1.0
+# Overview
 
-A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. This package simplifies the process of saddle point searching, offering flexible parameter settings and many visualization tools.
+`solscape` is a python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
+
 
 ## Features
 
@@ -36,8 +37,8 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/LiuOnly1121/HiSD_Package.git
-   cd HiSD
+   git clone https://github.com/HiSDpackage/solscape
+   cd solscape-1.0
    ```
 
 2. Install dependencies:
@@ -47,28 +48,48 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
 
 ## Quick Start
 
-Below is a basic workflow for using HiSD:
+Below is a basic workflow for using solscape-1.0:
 
-1. **Initialization**:
+1. **Add path**:
+   Use the following Python code to add the directory to the system path:
+
    ```python
-   import Landscape
-   mylandscape = Landscape.Landscape(**kwargs)
+   import sys
+   sys.path.append('/path/to/solscape-1.0')
    ```
 
-2. **Run the computation**:
+   Replace `'/path/to/solscape-1.0'` with the actual path where the `solscape-1.0` directory is located.
+
+2. **Import**:
    ```python
-   mylandscape.run()
+   from solscape import Landscape
    ```
 
-3. **Plot graphs**:
+3. **Initialization**:
    ```python
-   mylandscape.DrawHeatmap(**kwargs)
-   mylandscape.DrawConnection(**kwargs)
+   landscape = Landscape(**kwargs)
    ```
 
-4. **Save results**:
+4. **Run the computation**:
    ```python
-   mylandscape.Save(**kwargs)
+   landscape.Run()
+   ```
+
+5. **Plot graphs**:
+   ```python
+   landscape.DrawTrajectory(**kwargs)
+   landscape.DrawConnection(**kwargs)
+   ```
+
+6. **Save results**:
+   ```python
+   mylandscape.Save(filepath, fileformat)
+   ```
+
+7. **Restart**:
+   ```python
+   landscape.RestartFromPoint(RestartPoint, MaxIndex)
+   landscape.RestartFromSaddle(BeginID, Perturbation, MaxIndex)
    ```
 
 For more detailed usage, please refer to the documentation file.
@@ -88,19 +109,46 @@ Build-in packages:
 - `pickle`
 
 Third-party packages:
-- `numpy`
-- `scipy`
-- `sympy`
-- `matplotlib`
-- `networkx`
+- `numpy-2.2.3`
+- `scipy-1.15.2`
+- `sympy-1.13.3`
+- `matplotlib-3.10.0`
+- `networkx-3.4.2`
 
 ## Examples
 
-Here are some examples to help you get started quickly:
+Here are some example Jupyter Notebook files in `gallery` directory to help you get started quickly:(You can also check in the "Examples" section on the left)
 
 - `Ex_1_Butterfly.ipynb`
 - `Ex_2_MullerBrownPotential.ipynb`
 - `Ex_3_Cubic.ipynb`
 - `Ex_4_PhaseField.ipynb`
 
+## Contact
 
+If you are interested in `solscape` or want to contribute, please feel free to contact us!
+
+### Authors
+
+- **Lei Zhang**  
+  - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
+  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+
+- **Yuyang Liu**  
+  - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
+  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
+
+---
+
+### Acknowledgements
+
+Special thanks to the following contributors:
+- **Zixiang Xiao** (Main website author)
+- **Hua Su**
+- **Jin Zhao**
+
+Their contributions have been invaluable in the development of this package.
+
+---
+
+Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
