@@ -11,46 +11,31 @@ mathjax: true
 
 ---
 
+# Contact us
 
-If you are interested in HiSD or want to contribute, feel free to contact us!
+If you are interested in `solscape` or want to contribute, please feel free to contact us!
 
-**Author**: Yuyang Liu  
-**Email**: liuyuyang@stu.pku.edu.cn
+## Authors
+
+- **Lei Zhang**  
+  - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
+  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+
+- **Yuyang Liu**  
+  - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
+  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
 ---
 
-Thank you for using HiSD! Feedback and suggestions are always welcome!
+## Acknowledgements
 
+Special thanks to the following contributors:
+- **Zixiang Xiao** (Main website author)
+- **Hua Su**
+- **Jin Zhao**
 
-<div style="width:400px" onclick="myhref('http://faculty.bicmr.pku.edu.cn/~zhanglei/');"><hr/>
-Lei Zhang
-<br>
-Boya Distinguished Professor                
-<br>
-Beijing International Center for Mathematical Research
-<br>
-Center for Quantitative Biology
-<br>
-Center for Machine Learning Research
-<br>
-Peking University
-<br>
-http://faculty.bicmr.pku.edu.cn/~zhanglei/
-</div>
+Their contributions have been invaluable in the development of this package.
 
-<div style="width:400px" onclick="myhref('https://liuonly1121.github.io/');"><hr/>
-Yuyang Liu
-<br>
-Ph.D. Candidate               
-<br>
-School of Mathematical Science
-<br>
-Peking University
-<br>
-https://liuonly1121.github.io/
-</div>
+---
 
-<script type="text/javascript">
-    function myhref(web){
-      window.location.href = web;}
-</script>
+Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
