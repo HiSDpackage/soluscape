@@ -17,7 +17,7 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
 ## Features
 
 - **Multiple Algorithm Implementations**:
-  - `HiOSD`: High-index optimization-based shrinking dimer method for gradient systems.
+  - `HiSD`: High-index saddle dynamics for gradient systems.
   - `GHiSD`: Generalized high-index saddle dynamics method for non-gradient systems.
 - **Multiple Acceleration Algorithm Implementations**:
   - `HiSD`: Basic saddle point searching algorithm.
