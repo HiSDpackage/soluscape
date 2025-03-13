@@ -352,7 +352,7 @@ MyLandscape.Run()
 
 ```python
 MyLandscape.DrawConnection()
-MyLandscape.Save('Ex_PhaseField','mat')
+MyLandscape.Save('output\Ex_PhaseField','mat')
 # Save the data
 ```
 
