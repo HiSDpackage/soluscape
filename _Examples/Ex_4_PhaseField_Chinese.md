@@ -25,14 +25,14 @@ $$
 我们考虑定义域 $\Omega = [0,1]^{2}$ ，并采用周期性边界条件。 
 我们使用有限差分法对其进行离散化，网格划分为 $64 \times 64$。
 
-首先，我们将 `solscape-1.0` 目录的路径添加到系统路径中：
+首先，我们将 `soluscape-1.0` 目录的路径添加到系统路径中：
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 
 ```
 
@@ -40,7 +40,7 @@ sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0'))
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 
 # import packages needed
@@ -342,7 +342,7 @@ MyLandscape.Run()
     [WARNING] Degenerate saddle point detected under precision tol=1e-05: Hessian matrix may contain zero eigenvalue(s).
     Eigenvalue spectrum: negative=2, zero=2, positive=4092. 
 
-......([完整的结果请参考GitHub仓库中的文件](https://github.com/HiSDpackage/solscape/blob/main/_Examples/Ex_4_PhaseField.ipynb))
+......([完整的结果请参考GitHub仓库中的文件](https://github.com/HiSDpackage/soluscape/blob/main/_Examples/Ex_4_PhaseField.ipynb))
 
 
 
