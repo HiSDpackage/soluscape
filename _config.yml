@@ -68,6 +68,11 @@ include:
   - _Contact us
 
 exclude:
+  - doc/
+  - solscape-1.0/
+  - README.md
+  - requirements.txt
+  - gallery/
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
