@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Package Requirements_Chinese
+permalink: /Tutorial/PackageRequirements_Chinese
 title: ""
 sidebar:
     nav: Tutorial_Chinese
