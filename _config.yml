@@ -68,7 +68,7 @@ include:
   - _Contact us
 
 exclude:
-  - doc/
+  #- doc/
   - solscape-1.0/
   - README.md
   - requirements.txt
