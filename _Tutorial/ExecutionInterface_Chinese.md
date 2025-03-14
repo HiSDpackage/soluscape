@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Execution Interface_Chinese
+permalink: /Tutorial/ExecutionInterface_Chinese
 title: ""
 sidebar:
     nav: Tutorial_Chinese
