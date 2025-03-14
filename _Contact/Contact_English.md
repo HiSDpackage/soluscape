@@ -1,10 +1,10 @@
 ---
 layout: single
-permalink: /Contactus/Contactus_English
+permalink: /Contact/Contact_English
 title: ""
 excerpt: "A quick start guide."
 sidebar:
-    nav: Contact us
+    nav: Contact
 toc: true
 toc_sticky: true
 mathjax: true
