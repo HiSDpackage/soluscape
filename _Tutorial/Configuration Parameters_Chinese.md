@@ -9,7 +9,7 @@ toc_sticky: true
 mathjax: true
 
 ---
-# HiSD Package: solscape V-1.0
+# HiSD Package: soluscape V-1.0
 <!--
 *        Version:  1.0.0
 *        Created:  2024-12-25
@@ -24,7 +24,7 @@ mathjax: true
 ---
 ## 配置参数
 
-`solscape` 包的配置参数分为不同的类别，每个类别专注于算法的特定部分。以下是不同类别及其相关参数的概述。
+`soluscape` 包的配置参数分为不同的类别，每个类别专注于算法的特定部分。以下是不同类别及其相关参数的概述。
 
 ### 系统参数
 这些参数与系统设置及其一般属性相关：`Dim`、`EnergyFunction`、`Grad`、`AutoDiff`、`NumericalGrad`、`DimerLength`、`SymmetryCheck` 和 `GradientSystem`。
