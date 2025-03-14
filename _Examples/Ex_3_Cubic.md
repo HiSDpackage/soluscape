@@ -21,14 +21,14 @@ $$
 $$
 who happen to be the vertices, face centers, and body center of a cube.
 
-First, we add the path of the `solscape-1.0` directory to the system path.
+First, we add the path of the `soluscape-1.0` directory to the system path.
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 
 ```
 
@@ -36,7 +36,7 @@ Then, we import the main class.
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 
 # import packages needed
@@ -270,7 +270,7 @@ MyLandscape.Run()
 
     
 
-......([For the complete results, please refer to the file in the GitHub repository](https://github.com/HiSDpackage/solscape/blob/main/_Examples/Ex_3_Cubic.ipynb))
+......([For the complete results, please refer to the file in the GitHub repository](https://github.com/HiSDpackage/soluscape/blob/main/_Examples/Ex_3_Cubic.ipynb))
 
     
 
