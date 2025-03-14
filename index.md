@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /
-title: "solscape-1.0: Constructing Solution Landscapes Using High-index Saddle Dynamics (HiSD)"
+title: "soluscape-1.0: Constructing Solution Landscapes Using High-index Saddle Dynamics (HiSD)"
 excerpt: "A quick start guide."
 sidebar:
     nav: docs
@@ -12,7 +12,7 @@ mathjax: true
 ---
 # Overview
 
-`solscape` is a python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
+`soluscape` is a python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
 
 
 ## Features
@@ -37,8 +37,8 @@ mathjax: true
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HiSDpackage/solscape
-   cd solscape-1.0
+   git clone https://github.com/HiSDpackage/soluscape
+   cd soluscape-1.0
    ```
 
 2. Install dependencies:
@@ -48,21 +48,21 @@ mathjax: true
 
 ## Quick Start
 
-Below is a basic workflow for using solscape-1.0:
+Below is a basic workflow for using soluscape-1.0:
 
 1. **Add path**:
    Use the following Python code to add the directory to the system path:
 
    ```python
    import sys
-   sys.path.append('/path/to/solscape-1.0')
+   sys.path.append('/path/to/soluscape-1.0')
    ```
 
-   Replace `'/path/to/solscape-1.0'` with the actual path where the `solscape-1.0` directory is located.
+   Replace `'/path/to/soluscape-1.0'` with the actual path where the `soluscape-1.0` directory is located.
 
 2. **Import**:
    ```python
-   from solscape import Landscape
+   from soluscape import Landscape
    ```
 
 3. **Initialization**:
@@ -92,7 +92,7 @@ Below is a basic workflow for using solscape-1.0:
    landscape.RestartFromSaddle(BeginID, Perturbation, MaxIndex)
    ```
 
-For more detailed usage, please refer to the [documentation](https://github.com/HiSDpackage/solscape/blob/main/doc/Documentation.pdf) file.(You can also check in the ["Tutorial"](https://hisdpackage.github.io/solscape/Tutorial/Tutorial_overview) section on the left)
+For more detailed usage, please refer to the [documentation](https://github.com/HiSDpackage/soluscape/blob/main/doc/Documentation.pdf) file.(You can also check in the ["Tutorial"](https://hisdpackage.github.io/soluscape/Tutorial/Tutorial_overview) section on the left)
 
 ## Dependencies
 
@@ -117,7 +117,7 @@ Third-party packages:
 
 ## Examples
 
-Here are some example Jupyter Notebook files in `gallery` directory ([within the GitHub repository](https://github.com/HiSDpackage/solscape))  to help you get started quickly:(You can also check in the ["Examples"](https://hisdpackage.github.io/solscape/Examples/Examples_overview) section on the left)
+Here are some example Jupyter Notebook files in `gallery` directory ([within the GitHub repository](https://github.com/HiSDpackage/soluscape))  to help you get started quickly:(You can also check in the ["Examples"](https://hisdpackage.github.io/soluscape/Examples/Examples_overview) section on the left)
 
 - `Ex_1_Butterfly.ipynb`
 - `Ex_2_MullerBrownPotential.ipynb`
@@ -126,4 +126,4 @@ Here are some example Jupyter Notebook files in `gallery` directory ([within the
 
 
 ---
-Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
+Thank you for using `soluscape`! We welcome any feedback or suggestions you may have.
