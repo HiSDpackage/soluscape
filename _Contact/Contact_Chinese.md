@@ -4,7 +4,7 @@ permalink: /Contactus/Contactus_Chinese
 title: ""
 excerpt: "A quick start guide."
 sidebar:
-    nav: Contact us_Chinese
+    nav: Contact_Chinese
 toc: true
 toc_sticky: true
 mathjax: true
