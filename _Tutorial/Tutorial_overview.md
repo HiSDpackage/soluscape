@@ -9,7 +9,7 @@ toc_sticky: false
 mathjax: true
 ---
 
-# HiSD Package: solscape V-1.0
+# HiSD Package: soluscape V-1.0
 <!--
 *        Version:  1.0.0
 *        Created:  2024-12-25
@@ -24,7 +24,7 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
 ---
 
 ## Tutorial Overview
-This is a tutorial for the HiSD package `solscape-1.0`, which includes the following sections:
+This is a tutorial for the HiSD package `soluscape-1.0`, which includes the following sections:
 
 **Installation & Import**
 
