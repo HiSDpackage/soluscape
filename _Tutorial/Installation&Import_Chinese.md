@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Installation & Import_Chinese
+permalink: /Tutorial/Installation&Import_Chinese
 title: ""
 sidebar:
     nav: Tutorial_Chinese
