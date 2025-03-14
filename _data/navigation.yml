@@ -2,7 +2,7 @@ main:
   - title: "StartPage"
     url: /
   - title: "GitHub"
-    url: https://github.com/HiSDpackage/solscape
+    url: https://github.com/HiSDpackage/soluscape
   - title: "English Version"
     url: /index
   - title: "中文版"
