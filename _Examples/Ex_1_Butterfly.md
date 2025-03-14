@@ -18,21 +18,21 @@ E(x,y)=x^{4}-1.5x^{2}y^{2}+y^{4}-2y^{3}+y^{2}+x^{2}y-2x^{2}.
 \end{aligned}
 $$
 
-First, we add the path of the `solscape-1.0` directory to the system path.
+First, we add the path of the `soluscape-1.0` directory to the system path.
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 ```
 
 Then, we import the main class.
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 # import packages needed
 ```
