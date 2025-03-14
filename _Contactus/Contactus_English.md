@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Contact us/Contact us_English
+permalink: /Contactus/Contactus_English
 title: ""
 excerpt: "A quick start guide."
 sidebar:
