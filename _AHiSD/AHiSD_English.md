@@ -10,7 +10,7 @@ mathjax: false
 ---
 
 In this chapter, we briefly introduce two momentum-accelerated
-algorithms of HiOSD. The relevant theories and numerical experimental
+algorithms of HiSD. The relevant theories and numerical experimental
 results can be found in Reference [1].
 
 The first one is the heavy-ball acceleration: 
@@ -36,9 +36,9 @@ Where:
 
 -   $\text{EigenSol} \left\{ \mathbb{G}(\boldsymbol{x}^{(n+1)}), \left\{\boldsymbol{v}_i^{(n)}\right\}_{i=1}^{k} \right\}$
     is the eigenvector solver, which can use the direct discretization
-    of HiOSD dynamics or algorithms like LOBPCG.
+    of HiSD dynamics or algorithms like LOBPCG.
 
--   The step size $\beta_n$ is similar to that in the HiOSD algorithm
+-   The step size $\beta_n$ is similar to that in the HiSD algorithm
     and can be handled using Euler's method, line search methods, and
     the BB step size method.
 
