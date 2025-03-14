@@ -170,7 +170,7 @@ MyLandscape.DrawTrajectory(ContourGridNum=100, ContourGridOut=25, DetailedTraj=T
 
 
     
-![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_10_0.png)
+![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_11_0.png)
     
 
 
@@ -183,7 +183,7 @@ MyLandscape.DrawConnection()
 
 
     
-![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_12_0.png)
+![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_13_0.png)
     
 
 
@@ -249,7 +249,7 @@ MyLandscape.DrawTrajectory(ContourGridNum=100, ContourGridOut=25, DetailedTraj=T
 
 
     
-![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_15_0.png)
+![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_16_0.png)
     
 
 
@@ -264,12 +264,6 @@ MyLandscape.Save('output\Ex_MBP','pickle')
 
 
     
-![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_17_0.png)
-    
-
-
-
-    
-![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_12_0.png)
+![png](Ex_2_MullerBrownPotential_files/Ex_2_MullerBrownPotential_18_0.png)
     
 
