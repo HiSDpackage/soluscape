@@ -495,4 +495,9 @@ ani.save("output\Ex_Butterfly.mp4", writer="ffmpeg") # Must install ffmpeg
 The generated animated image is displayed as follows:
 
 
-![Video](output/Ex_Butterfly.mp4)
+
+<video controls width="100%">
+  <source src="output/Ex_Butterfly.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
