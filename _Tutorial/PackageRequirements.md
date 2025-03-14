@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Package Requirements
+permalink: /Tutorial/PackageRequirements
 title: ""
 sidebar:
     nav: Tutorial
