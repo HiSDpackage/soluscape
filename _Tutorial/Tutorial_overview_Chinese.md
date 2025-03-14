@@ -9,7 +9,7 @@ toc_sticky: false
 mathjax: true
 ---
 
-# HiSD Package: solscape V-1.0
+# HiSD Package: soluscape V-1.0
 <!--
 *        Version:  1.0.0
 *        Created:  2024-12-25
@@ -24,7 +24,7 @@ mathjax: true
 ---
 
 ## 教程概要
-这是HiSD包 `solscape-1.0`的教程，包括以下几个部分：
+这是HiSD包 `soluscape-1.0`的教程，包括以下几个部分：
 
 **安装与导入**
 
