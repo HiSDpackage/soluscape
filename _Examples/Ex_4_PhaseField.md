@@ -25,14 +25,14 @@ $$
 We consider $\Omega = [0,1]^{2}$ with periodic boundary condition. 
 We discrete it using finite difference scheme of mesh grids $64 \times 64$. 
 
-First, we add the path of the `solscape-1.0` directory to the system path.
+First, we add the path of the `soluscape-1.0` directory to the system path.
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 
 ```
 
@@ -40,7 +40,7 @@ Then, we import the main class.
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 
 # import packages needed
@@ -342,7 +342,7 @@ MyLandscape.Run()
     [WARNING] Degenerate saddle point detected under precision tol=1e-05: Hessian matrix may contain zero eigenvalue(s).
     Eigenvalue spectrum: negative=2, zero=2, positive=4092. 
 
-......([For the complete results, please refer to the file in the GitHub repository](https://github.com/HiSDpackage/solscape/blob/main/_Examples/Ex_4_PhaseField.ipynb))
+......([For the complete results, please refer to the file in the GitHub repository](https://github.com/HiSDpackage/soluscape/blob/main/_Examples/Ex_4_PhaseField.ipynb))
 
 
 
