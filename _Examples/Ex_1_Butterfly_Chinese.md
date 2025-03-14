@@ -491,4 +491,10 @@ ani = animateSL(fig, ax, saddleinfo, trajinfo, dt_per_frame=0.02)
 ani.save("output\Ex_Butterfly.mp4", writer="ffmpeg") # Must install ffmpeg
 ```
 
+生成的动画图像显示如下：
 
+
+<video controls width="100%">
+  <source src="https://raw.githubusercontent.com/HiSDpackage/soluscape/main/_Examples/output/Ex_Butterfly.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
