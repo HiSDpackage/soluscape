@@ -343,7 +343,7 @@ Momentum coefficient for heavy ball acceleration.
 `0.0`  
 
 **Constraints**  
-- `0.0 â‰? Momentum < 1.0`  
+- `0.0 <= Momentum < 1.0`  
 - `0.0`: Equivalent to no acceleration  
 
 --- 
@@ -374,7 +374,7 @@ Convergence threshold for saddle point iterations.
 `1e-6`  
 
 **Stopping Criterion**  
-â€–gradient vectorâ€?$_2$ < Tolerance  
+$Vert$ gradient vector $Vert_2$ < Tolerance  
 
 --- 
 
@@ -389,7 +389,7 @@ Maximum exploration radius from initial point.
 `1e3`  
 
 **Effect**  
-Terminates search if â€–x - x$_0$â€?$_2$ > SearchArea  
+Terminates search if $\Vert$ x - x$_0$ $\Vert_2$ > SearchArea  
 
 --- 
 
@@ -463,7 +463,7 @@ These parameters are related to constructing and navigating the solution landsca
 **Description**  
 Maximum saddle index (k) to compute.  
 - Index 0: Uses standard SD (Steepest Descent) method  
-- Index â‰?1: Uses HiSD (High-index Saddle Dynamics) method  
+- Index >=1: Uses HiSD (High-index Saddle Dynamics) method  
 
 **Data Type**  
 `int` (non-negative)  
@@ -472,7 +472,7 @@ Maximum saddle index (k) to compute.
 `6`  
 
 **Constraints**  
-`0 â‰? max_index â‰? Dim`
+`0 <= max_index <= Dim`
 
 --- 
 
@@ -488,8 +488,8 @@ Maximum allowed index difference between parent and child saddle points during h
 
 **Example**  
 If `MaxIndexGap = 2`:  
-- Parent (index 4) â†? Children (indices 2, 3)  
-- Parent (index 3) â†? Children (indices 1, 2)  
+- Parent (index 4) --> Children (indices 2, 3)  
+- Parent (index 3) --> Children (indices 1, 2)  
 
 --- 
 
@@ -558,7 +558,7 @@ Displacement magnitude for saddle perturbations.
 Number of directional probes per saddle point.  
 
 **Note**  
-Actual probes = `2 Ã— PerturbationNumber` (bidirectional)  
+Actual probes = `2 * PerturbationNumber` (bidirectional)  
 
 **Data Type**  
 `int` (positive) 
@@ -622,7 +622,7 @@ Restarts computation from specified coordinates.
 | Name | Type | Constraints | Description |
 |------|------|-------------|-------------|
 | `RestartPoint` | `list` or `numpy.ndarray` (1D) | Must match system dimension | Initial position vector |
-| `MaxIndex` | `int` | `0 â‰? max_index â‰? dim` | Maximum saddle index to compute |
+| `MaxIndex` | `int` | `0 <= max_index <= dim` | Maximum saddle index to compute |
 
 **Usage**  
 ```python
@@ -642,9 +642,9 @@ Restarts computation from existing saddle point.
 
 | Name | Type | Constraints | Description |
 |------|------|-------------|-------------|
-| `BeginID` | `int` | `0 â‰? begin_id < len(SaddleList)` | Valid saddle point ID |
+| `BeginID` | `int` | `0 <= begin_id < len(SaddleList)` | Valid saddle point ID |
 | `Perturbation` | `numpy.ndarray` (1D) | Must match system dimension | Initial perturbation vector |
-| `MaxIndex` | `int` | `0 â‰? max_index â‰? dim` | Maximum saddle index to compute |
+| `MaxIndex` | `int` | `0 <= max_index <= dim` | Maximum saddle index to compute |
 
 **Usage**  
 ```python
@@ -668,18 +668,18 @@ Visualizes search trajectories and energy landscapes for systems. Supports conto
 | `DetailedTraj` | `bool` | Requires saved trajectory data | Show full iteration path <br>(default: `False`) |
 | `Contour` | `bool` | 2D systems only | Enable contour lines <br>(default: `True`) |
 | `Contourf` | `bool` | `Contour=True` | Enable color-filled contours <br>(default: `True`) |
-| `ContourGridNum` | `int` | `â‰? 1` | Main grid divisions per axis <br>(default: `50`) |
-| `ContourGridOut` | `int` | `â‰? 0` | Extended grid divisions per axis <br>(default: `10`) |
+| `ContourGridNum` | `int` | `>= 1` | Main grid divisions per axis <br>(default: `50`) |
+| `ContourGridOut` | `int` | `>= 0` | Extended grid divisions per axis <br>(default: `10`) |
 | `Title` | `str` |  | Figure title text <br>(defalut: `"The Search Trajectory"`) |
 | `TrajectorySet` | `dict` |  | Set the trajectory style <br>(default: `{"linewidth": 0.4, "linestyle": "-", "color": "blue", "label": "Search Trajectory"}`) |
 | `SaddlePointSet` | `list[dict]` |  | Set the saddle point style <br>(default: `[{"marker": "o", "color": colors[20 * i + 20], "label": f"Index {i} Saddle Point"} for i in range(instance.MaxIndex + 1)]`) |
 | `GridSet` | `dict` |  | Set the grid style <br>(default: `{"visible": True, "linestyle": "--", "linewidth": 0.1, "color": "gray"}`) |
-| `1DSamples` | `int` | `â‰? 1` <br>(1D only) | Function sampling density <br>(default: `1e3`) |
-| `1DSamplesOut` | `int` | `â‰? 0` <br>(1D only) | Extended sampling range <br>(default: `1e2`) |
+| `1DSamples` | `int` | `>= 1` <br>(1D only) | Function sampling density <br>(default: `1e3`) |
+| `1DSamplesOut` | `int` | `>= 0` <br>(1D only) | Extended sampling range <br>(default: `1e2`) |
 | `1DFunctionDraw` | `dict` | 1D only | Set the 1D function style <br>(default: `{"linewidth": 2, "linestyle": "-", "color": "red", "label": "Function Curve"}`) |
 | `WhetherSave` | `bool` |  | Save to file <br>(default: `False`) |
 | `SaveFigurePath` | `str` | File extension determines format | Output path <br>(default: `"Landscape_figure.png"`) |
-| `Projection` | `None` or `callable` | Required for dim > 2 | Projection function <br>(Signature: `((n*dim) array) â†? ((n*2) array)`) |
+| `Projection` | `None` or `callable` | Required for dim > 2 | Projection function <br>(Signature: `((n*dim) array) --> ((n*2) array)`) |
 
 **Usage**  
 ```python
@@ -711,7 +711,7 @@ landscape.DrawTrajectory(
 **Dimensionality Handling**:
 - 1D: X-axis = iteration count, Y-axis = function value
 - 2D: Natural coordinates
-- â‰?3D: Requires `Projection` to 2D plane
+- >=3D: Requires `Projection` to 2D plane
 
 **Data Requirements**  
 - Detailed trajectories require `SaveTrajectory=True` in `.Run()` call
@@ -778,7 +778,7 @@ Contains dictionary with aligned indices for:
 
 **Index Consistency**  
 All data structures maintain identical ordering:  
-`SaddleID[n]` â†? `Position[n]` â†? `MorseIndex[n]` â†? `FatherSet[n]`
+`SaddleID[n]` - `Position[n]` - `MorseIndex[n]` - `FatherSet[n]`
 
 ---
 
