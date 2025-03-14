@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Configuration Parameters_Chinese
+permalink: /Tutorial/ConfigurationParameters_Chinese
 title: ""
 sidebar:
     nav: Tutorial_Chinese
