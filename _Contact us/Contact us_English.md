@@ -13,7 +13,7 @@ mathjax: true
 
 # Contact us
 
-If you are interested in `solscape` or want to contribute, please feel free to contact us!
+If you are interested in `soluscape` or want to contribute, please feel free to contact us!
 
 ## Authors
 
@@ -52,4 +52,4 @@ Their contributions have been invaluable in the development of this package.
 
 ---
 
-Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
+Thank you for using `soluscape`! We welcome any feedback or suggestions you may have.
