@@ -9,7 +9,7 @@ toc_sticky: true
 mathjax: true
 
 ---
-# HiSD Package: solscape V-1.0
+# HiSD Package: soluscape V-1.0
 <!--
 *        Version:  1.0.0
 *        Created:  2024-12-25
