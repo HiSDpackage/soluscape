@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Installation & Import
+permalink: /Tutorial/Installation&Import
 title: ""
 sidebar:
     nav: Tutorial
