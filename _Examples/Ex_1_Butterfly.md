@@ -90,7 +90,7 @@ MyLandscape.Run()
     Parameter 'SymmetryCheck' not provided. Defaulting to True with automatic detection.
     
     
-    Gradient system detected. Activating HiOSD algorithm.
+    Gradient system detected. Activating HiSD algorithm.
     
     
     Landscape Configuration:
