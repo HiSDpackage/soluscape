@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Contactus/Contactus_Chinese
+permalink: /Contact/Contact_Chinese
 title: ""
 excerpt: "A quick start guide."
 sidebar:
