@@ -497,7 +497,7 @@ The generated animated image is displayed as follows:
 
 
 <video controls width="100%">
-  <source src="" type="video/mp4">
+  <source src="https://github.com/HiSDpackage/soluscape/blob/main/_Examples/output/Ex_Butterfly.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
