@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Output Objects_Chinese
+permalink: /Tutorial/OutputObjects_Chinese
 title: ""
 sidebar:
     nav: Tutorial_Chinese
