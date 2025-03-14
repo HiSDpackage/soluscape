@@ -495,4 +495,4 @@ ani.save("output\Ex_Butterfly.mp4", writer="ffmpeg") # Must install ffmpeg
 The generated animated image is displayed as follows:
 
 
-![Video](path/to/your/video.mp4)
+![Video](output/Ex_Butterfly.mp4)
