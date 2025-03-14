@@ -21,14 +21,14 @@ $$
 $$
 ，它们恰好构成一个立方体的顶点、面心和体心。
 
-首先，我们将 `solscape-1.0` 目录的路径添加到系统路径中：
+首先，我们将 `soluscape-1.0` 目录的路径添加到系统路径中：
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 
 ```
 
@@ -36,7 +36,7 @@ sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0'))
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 
 # import packages needed
@@ -270,7 +270,7 @@ MyLandscape.Run()
 
     
 
-......([完整的结果请参考GitHub仓库中的文件](https://github.com/HiSDpackage/solscape/blob/main/_Examples/Ex_3_Cubic.ipynb))
+......([完整的结果请参考GitHub仓库中的文件](https://github.com/HiSDpackage/soluscape/blob/main/_Examples/Ex_3_Cubic.ipynb))
 
     
 
