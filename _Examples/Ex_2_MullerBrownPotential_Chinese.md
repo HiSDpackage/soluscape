@@ -28,14 +28,14 @@ a &= [-1,-1,-6.5,0.7], b=[0,0,11,0.6], c=[-10,-10,-6.5,0.7], \\
 \end{aligned}
 $$
 
-首先，我们将 `solscape-1.0` 目录的路径添加到系统路径中：
+首先，我们将 `soluscape-1.0` 目录的路径添加到系统路径中：
 
 
 ```python
 import sys
 import os
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0')))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'soluscape-1.0')))
 
 ```
 
@@ -43,7 +43,7 @@ sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..', 'solscape-1.0'))
 
 
 ```python
-from solscape import Landscape
+from soluscape import Landscape
 import numpy as np
 
 # import packages needed
