@@ -11,7 +11,7 @@ mathjax: true
 
 ---
 
-# HiSD Package: solscape V-1.0
+# HiSD Package: soluscape V-1.0
 <!--
 *        Version:  1.0.0
 *        Created:  2024-12-25
@@ -25,7 +25,7 @@ A Python package for constructing solution landscapes using High-index Saddle Dy
       
 ---
 ## Configuration Parameters
-The configuration parameters for the `solscape` package are divided into different categories, each focusing on a specific part of the algorithm. Below is an overview of the different categories and the associated parameters.
+The configuration parameters for the `soluscape` package are divided into different categories, each focusing on a specific part of the algorithm. Below is an overview of the different categories and the associated parameters.
 
 ### System Parameters
 These parameters are related to the system setup and its general properties: `Dim`, `EnergyFunction`, `Grad`, `AutoDiff`, `NumericalGrad`, `DimerLength`, `SymmetryCheck` and `GradientSystem`.
