@@ -1,6 +1,6 @@
 # Overview
 
-`solscape` is a python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
+`soluscape` is a python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD). This toolkit enables numerical computation of saddle points and their hierarchical organization in dynamical systems. It simplifies the process of saddle point searching, offers flexible parameter settings and many visualization tools.
 
 ## Features
 
@@ -24,8 +24,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HiSDpackage/solscape
-   cd solscape-1.0
+   git clone https://github.com/HiSDpackage/soluscape
+   cd soluscape-1.0
    ```
 
 2. Install dependencies:
@@ -35,21 +35,21 @@
 
 ## Quick Start
 
-Below is a basic workflow for using solscape-1.0:
+Below is a basic workflow for using soluscape-1.0:
 
 1. **Add path**:
    Use the following Python code to add the directory to the system path:
 
    ```python
    import sys
-   sys.path.append('/path/to/solscape-1.0')
+   sys.path.append('/path/to/soluscape-1.0')
    ```
 
-   Replace `'/path/to/solscape-1.0'` with the actual path where the `solscape-1.0` directory is located.
+   Replace `'/path/to/soluscape-1.0'` with the actual path where the `soluscape-1.0` directory is located.
 
 2. **Import**:
    ```python
-   from solscape import Landscape
+   from soluscape import Landscape
    ```
 
 3. **Initialization**:
@@ -113,7 +113,7 @@ Here are some example Jupyter Notebook files in `gallery` directory to help you 
 
 ## Contact
 
-If you are interested in `solscape` or want to contribute, please feel free to contact us!
+If you are interested in `soluscape` or want to contribute, please feel free to contact us!
 
 ## Authors
 
@@ -152,4 +152,4 @@ Their contributions have been invaluable in the development of this package.
 
 ---
 
-Thank you for using `solscape`! We welcome any feedback or suggestions you may have.
+Thank you for using `soluscape`! We welcome any feedback or suggestions you may have.
