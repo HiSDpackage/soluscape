@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Execution Interface
+permalink: /Tutorial/ExecutionInterface
 title: ""
 sidebar:
     nav: Tutorial
