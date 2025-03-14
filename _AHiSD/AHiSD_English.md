@@ -4,9 +4,9 @@ permalink: /AHiSD/AHiSD_English
 title: "Accelerated High-index Saddle Dynamics"
 sidebar:
     nav: Theory
-toc: true
+toc: false
 toc_sticky: false
-mathjax: false
+mathjax: true
 ---
 
 In this chapter, we briefly introduce two momentum-accelerated
