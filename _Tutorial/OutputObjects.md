@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Output Objects
+permalink: /Tutorial/OutputObjects
 title: ""
 sidebar:
     nav: Tutorial
