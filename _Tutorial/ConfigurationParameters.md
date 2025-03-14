@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /Tutorial/Configuration Parameters
+permalink: /Tutorial/ConfigurationParameters
 title: ""
 sidebar:
     nav: Tutorial
