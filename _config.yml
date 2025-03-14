@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title                    : "HiSD Package: solscape-1.0"
+title                    : "HiSD Package: soluscape-1.0"
 email: liuyuyang@stu.pku.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   A Python package for constructing solution landscapes using High-index Saddle Dynamics (HiSD).
-baseurl: "/solscape" # the subpath of your site, e.g. /blog
+baseurl: "/soluscape" # the subpath of your site, e.g. /blog
 url: "https://hisdpackage.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 atom_feed:
   hide: true
 
-repository: HiSDpackage/solscape
+repository: HiSDpackage/soluscape
 repository_tree: main
 
 # Build settings
@@ -69,7 +69,7 @@ include:
 
 exclude:
   - doc/
-  - solscape-1.0/
+  - soluscape-1.0/
   - README.md
   - requirements.txt
   - gallery/
