@@ -4,9 +4,9 @@ permalink: /AHiSD/AHiSD_Chinese
 title: "加速高阶鞍点动力学(AHiSD)"
 sidebar:
     nav: Theory_Chinese
-toc: true
+toc: false
 toc_sticky: false
-mathjax: false
+mathjax: true
 ---
 
 这一章我们简单介绍两种HiSD的动量加速算法，其相关理论和数值实验结果详见参考文献[1]。
