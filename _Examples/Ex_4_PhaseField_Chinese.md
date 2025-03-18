@@ -433,6 +433,12 @@ for i in range(len(MyLandscape.SaddleList)):
 
     
 ![png](Ex_4_PhaseField_files/Ex_4_PhaseField_18_5.png)
+
+
+
+我们把鞍点相场示意图结合解景观联系起来可以得到：
+![png](Ex_4_PhaseField_files/Ex_4_PhaseField_new.png)
+
     
 
 
