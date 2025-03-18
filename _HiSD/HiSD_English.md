@@ -675,4 +675,4 @@ method to offer alternative approaches to solving the problem.
 
  
 # 9 References
-[1] Yin, Jianyuan & Zhang, Lei & Zhang, Pingwen. (2019). High-Index Optimization-Based Shrinking Dimer Method for Finding High-Index Saddle Points. SIAM Journal on Scientific Computing. 41. A3576-A3595. 10.1137/19M1253356. 
+1. Yin, J., Zhang, L., & Zhang, P. (2019). High-index optimization-based shrinking dimer method for finding high-index saddle points. _SIAM Journal on Scientific Computing_, ​**41**(6), A3576-A3595. https://doi.org/10.1137/19M1253356
