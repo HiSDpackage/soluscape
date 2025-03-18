@@ -360,7 +360,7 @@ different indexs and makes our search more systematic and comprehensive.
 
 # 6 References
 
-1. Yin, J., Yu, B., & Zhang, L. (2020). Searching the solution landscape by generalized high-index saddle dynamics. _Science China Mathematics_, ​**64**(8). https://doi.org/10.1007/s11425-020-1737-1
+1. Yin, J., Yu, B., & Zhang, L. (2020). Searching the solution landscape by generalized high-index saddle dynamics. _Science China Mathematics_, ​**64**(8). [https://doi.org/10.1007/s11425-020-1737-1](https://doi.org/10.1007/s11425-020-1737-1)
 
-2. Zhang, L., Zhang, P., & Zheng, X. (2024). Understanding high-index saddle dynamics via numerical analysis. _Communications in Mathematical Sciences_, ​**23**(2). https://doi.org/10.4310/CMS.241217235844
+2. Zhang, L., Zhang, P., & Zheng, X. (2024). Understanding high-index saddle dynamics via numerical analysis. _Communications in Mathematical Sciences_, ​**23**(2). [https://doi.org/10.4310/CMS.241217235844](https://doi.org/10.4310/CMS.241217235844)
 
