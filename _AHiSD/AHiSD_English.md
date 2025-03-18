@@ -65,4 +65,4 @@ Where:
     
 # References
 
-[1] Luo, Yue & Zhang, Lei & Zheng, Xiangcheng. (2025). Accelerated High-Index Saddle Dynamics Method for Searching High-Index Saddle Points. Journal of Scientific Computing. 102. 10.1007/s10915-024-02760-6. 
+1. Luo, Y., Zhang, L., & Zheng, X. (2025). Accelerated high-index saddle dynamics method for searching high-index saddle points. _Journal of Scientific Computing_, ​**102**(3). https://doi.org/10.1007/s10915-024-02760-6
