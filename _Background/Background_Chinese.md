@@ -31,4 +31,4 @@ dynamics)，将计算不稳定的高阶鞍点转换成计算高阶鞍点动力�
 
 # 参考文献
 
-1. Zhang, L. (2023). Construction of solution landscapes for complex systems. _Mathematica Numerica Sinica_, ​**45**(3), 267-283. https://doi.org/10.12286/jssx.j2023-1121
+1. Zhang, L. (2023). Construction of solution landscapes for complex systems. _Mathematica Numerica Sinica_, ​**45**(3), 267-283. [https://doi.org/10.12286/jssx.j2023-1121](https://doi.org/10.12286/jssx.j2023-1121)
