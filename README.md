@@ -140,7 +140,7 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
   - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
 
-## Acknowledgements
+### Acknowledgements
 
 Special thanks to the following contributors:
 - **Zixiang XIAO** (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
@@ -150,7 +150,7 @@ Special thanks to the following contributors:
 Their contributions have been invaluable in the development of this package.
 
 
-## Related Work
+### Related Work
 
 The theoretical foundation of our software package is derived from the following research articles:
 
