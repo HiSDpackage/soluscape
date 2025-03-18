@@ -26,8 +26,8 @@ $\boldsymbol{F}(\boldsymbol{x})$ as an element of $\mathcal{H}$.
 
 -   A critical point of $E(\boldsymbol{x})$ that is not a local extremum
     is called a saddle point of $E(\boldsymbol{x})$. Especially,
-    sometimes we also refer to a local minimum as a index-$0$ saddle
-    point and a local maximum as a index-$d$ saddle point (where $d$ is
+    sometimes we also refer to a local minimum as an index-$0$ saddle
+    point and a local maximum as an index-$d$ saddle point (where $d$ is
     the system dimension).
 
 -   A critical point $\boldsymbol{\hat{x}}$ is called nondegenerate if
