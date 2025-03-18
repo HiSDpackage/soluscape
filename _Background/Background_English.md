@@ -110,4 +110,4 @@ and minima in the solution landscape.
 
 # References
 
-[1] Zhang Lei. CONSTRUCTION OF SOLUTION LANDSCAPES FOR COMPLEX SYSTEMS. Mathematica Numerica Sinica, 2023, 45(3): 267-283 https://doi.org/10.12286/jssx.j2023-1121
+1. Zhang, L. (2023). Construction of solution landscapes for complex systems. _Mathematica Numerica Sinica_, ​**45**(3), 267-283. https://doi.org/10.12286/jssx.j2023-1121
