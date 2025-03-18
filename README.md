@@ -139,7 +139,6 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
   - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
   - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
----
 
 ## Acknowledgements
 
