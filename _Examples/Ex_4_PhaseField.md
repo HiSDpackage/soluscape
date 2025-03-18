@@ -433,6 +433,12 @@ for i in range(len(MyLandscape.SaddleList)):
 
     
 ![png](Ex_4_PhaseField_files/Ex_4_PhaseField_18_5.png)
+
+
+
+By linking the saddle-point phase field schematic diagram with the solution landscape, we can establish the connection between them：
+
+![png](Ex_4_PhaseField_files/Ex_4_PhaseField_new.png)
     
 
 
