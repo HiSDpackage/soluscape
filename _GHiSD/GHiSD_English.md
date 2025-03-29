@@ -126,7 +126,7 @@ definite subspace of the Hessian matrix of a critical point in gradient
 systems) as its index. Similar to what is mentioned in the HiSD
 documentation, sometimes we also call sink points (corresponding to
 energy minima) as index-$0$ saddle points, and source points
-(corresponding to energy maxima) as index-$d$ index saddle points.
+(corresponding to energy maxima) as index-$d$ saddle points.
 Therefore, we sometimes uniformly refer to index-$k$ equilibrium points
 as index-$k$ saddle points. In the following sections, we will introduce
 how to search for index-$k$ saddle points(for short,$k$-saddle,the same
