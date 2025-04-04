@@ -43,6 +43,7 @@ def lobpcg_exacthessian(instance, x, v, **kwargs):
         max_iter = instance.EigenMaxIter
     N = instance.Dim
     H = Hessian(instance, x) # Exact Hessian matrix
+    v = v.reshape(N, instance.SaddleIndex)
     values, vectors = linalg.lobpcg(A=H, X=v, maxiter=max_iter, largest=False)
     whetherkindex = True
     if values[-1] >= 0:

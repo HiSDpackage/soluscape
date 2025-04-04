@@ -119,8 +119,8 @@ def AutoGradNum(instance, x):
     xdown = x - delta
 
     # Use map to calculate the energy for perturbed x values
-    energy_up = np.array(list(map(instance.EnergyFunction, xup.T)))
-    energy_down = np.array(list(map(instance.EnergyFunction, xdown.T)))
+    energy_up = np.array(list(map(instance.EnergyFunction, xup)))
+    energy_down = np.array(list(map(instance.EnergyFunction, xdown)))
 
     # Compute the gradient using the finite difference formula
     grad = (energy_up - energy_down) / (2 * L)
