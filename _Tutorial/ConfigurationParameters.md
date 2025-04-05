@@ -37,9 +37,9 @@ System dimension specification.
 `int` (positive) 
 
 **Behavior**  
-- Default: Inferred from `initial_point`  
+- Default: Inferred from `InitialPoint`  
 - Manual override must match dimensions of:  
-  - `initial_point`  
+  - `InitialPoint`  
   - `InitialSearchDirection`  
 
 --- 
