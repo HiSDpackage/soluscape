@@ -55,9 +55,9 @@ System dimension specification.
 `int` (positive) 
 
 **Behavior**  
-- Default: Inferred from `initial_point`  
+- Default: Inferred from `InitialPoint`  
 - Manual override must match dimensions of:  
-  - `initial_point`  
+  - `InitialPoint`  
   - `InitialSearchDirection`  
 
 --- 
@@ -359,7 +359,7 @@ The starting coordinates for saddle point search.
 `list` | `numpy.ndarray` (1D array)  
 
 **Example**  
-`initial_point = [0.5, -1.2]`
+`InitialPoint = [0.5, -1.2]`
 
 ---
 
