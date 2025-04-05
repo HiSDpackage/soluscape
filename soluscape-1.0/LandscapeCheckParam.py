@@ -89,8 +89,8 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
             tempv0 = np.array(kwargs["InitialEigenVectors"])
             if (
                 tempv0.ndim
-                > 2 | tempv0.shape[0]
-                != instance.Dim | tempv0.shape[1]
+                > 2 or tempv0.shape[0]
+                != instance.Dim or tempv0.shape[1]
                 != instance.MaxIndex
             ):
                 raise ValueError(
