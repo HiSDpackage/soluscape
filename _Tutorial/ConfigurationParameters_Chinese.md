@@ -37,9 +37,9 @@ mathjax: true
 `int`（正整数）  
 
 **行为**  
-- 默认值：从 `initial_point` 推断  
+- 默认值：从 `InitialPoint` 推断  
 - 手动覆盖必须与以下维度匹配：  
-  - `initial_point`  
+  - `InitialPoint`  
   - `InitialSearchDirection`  
 
 --- 
