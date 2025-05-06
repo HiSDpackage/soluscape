@@ -38,9 +38,9 @@ mathjax: true
   - 邮箱: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
   - 主页: [Yuyang LIU's Homepage](https://liuonly1121.github.io/)
 
-<small>- ​**肖子翔** (网站主要作者): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</small>  
-<small>- ​**苏华**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</small>  
-<small>- ​**赵进**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</small>
+- <span style="font-size: 0.9em;">**肖子翔** (网站主要作者): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</span>  
+- <span style="font-size: 0.9em;">**苏华**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
+- <span style="font-size: 0.9em;">**赵进**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
 
 ---
 
