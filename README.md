@@ -165,12 +165,9 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
   - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
   - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
-- #### Zixiang XIAO (Main website author)
-[xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</span>  
-- #### Hua SU
-[suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
-- #### Jin ZHAO
-[zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
+- #### Zixiang XIAO (Main website author):[xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</span>  
+- #### Hua SU:[suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
+- #### Jin ZHAO:[zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
 
 
 <!--
