@@ -11,24 +11,24 @@ warnings.filterwarnings("ignore")
 
 
 class Solver:
-    def __init__(self, **kwargs):
-        """
-        Validate parameters passed during initialization.
-        """
-        HiSDCheckParam(self, **kwargs)
+	def __init__(self, **kwargs):
+		"""
+		Validate parameters passed during initialization.
+		"""
+		HiSDCheckParam(self, **kwargs)
 
-    def run(self):
-        """
-        Solve for a specific saddle point.
-        """
-        self.flag = True # Initialize flags and timers
+	def run(self):
+		"""
+		Solve for a specific saddle point.
+		"""
+		self.flag = True  # Initialize flags and timers
 
-        # Check SaddleIndex and decide the method
-        if self.SaddleIndex != 0:
-            self.x, self.x_pre, self.v = HiSDInitialization(self)
-            self.CalMethod = HiSDIteration
-        else:
-            self.x = copy.deepcopy(self.InitialPoint)
-            self.x_pre = copy.deepcopy(self.InitialPoint)
-            self.CalMethod = SDIteration
-        return self.CalMethod(self)
+		# Check SaddleIndex and decide the method
+		if self.SaddleIndex != 0:
+			self.x, self.x_pre, self.v = HiSDInitialization(self)
+			self.CalMethod = HiSDIteration
+		else:
+			self.x = copy.deepcopy(self.InitialPoint)
+			self.x_pre = copy.deepcopy(self.InitialPoint)
+			self.CalMethod = SDIteration
+		return self.CalMethod(self)
