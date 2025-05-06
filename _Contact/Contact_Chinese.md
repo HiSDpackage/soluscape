@@ -42,17 +42,19 @@ mathjax: true
 - <span style="font-size: 0.9em;">**苏华**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
 - <span style="font-size: 0.9em;">**赵进**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
 
+<!--
+
 ---
 
 ## 致谢
 
 特别感谢以下贡献者：
-- **肖子翔** (网站主要作者): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
-- **苏华**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
-- **赵进**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
 
 他们的贡献对本工具包的开发至关重要。
 
 ---
 
 感谢使用`soluscape`！我们欢迎任何反馈或建议。
+
+
+-->
