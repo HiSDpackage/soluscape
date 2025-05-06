@@ -143,6 +143,33 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
 - <span style="font-size: 0.7em;">**Hua SU**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
 - <span style="font-size: 0.7em;">**Jin ZHAO**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
 
+###Lei ZHANG
+
+  Boya Distinguished Professor
+
+  Beijing International Center for Mathematical Research (BICMR),
+
+  Center for Quantitative Biology (CQB),
+  
+  Center for Machine Learning Research (CMLR), Peking University.
+
+  - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
+  - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
+
+###Yuyang LIU
+  
+  Ph.D. Candidate
+
+  School of Mathematical Science (SMS), Peking Univertsity.
+
+  - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
+  - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
+
+###Zixiang XIAO (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</span>  
+###Hua SU: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
+###Jin ZHAO: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
+
+
 <!--
 ---
 
