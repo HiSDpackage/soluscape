@@ -73,7 +73,7 @@ def HiSDCheckParam(instance, **kwargs):
 			instance.NumericalGrad = kwargs["NumericalGrad"]
 		else:
 			raise ValueError(
-				f"Invalid `NumericalGrad` value: expected bool, got {kwargs["NumericalGrad"]} (type={type(kwargs["NumericalGrad"]).__name__})."
+				f"Invalid `NumericalGrad` value: expected bool, got {kwargs['NumericalGrad']} (type={type(kwargs['NumericalGrad']).__name__})."
 			)
 	else:
 		instance.NumericalGrad = False
@@ -104,7 +104,7 @@ def HiSDCheckParam(instance, **kwargs):
 				for list_str in kwargs["Grad"]:
 					if not isinstance(list_str, str):
 						raise ValueError(
-							f"Invalid `Grad` value: expected list of string or callable, got {kwargs["Grad"]} (type={type(kwargs["Grad"]).__name__})."
+							f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs['Grad']).__name__})."
 						)
 				instance.AutoDiff = False
 				instance.GradFunction_sympy, instance.GradFunction_numpy = (
@@ -115,7 +115,7 @@ def HiSDCheckParam(instance, **kwargs):
 				instance.Grad = lambda x: AutoGrad(instance, x)
 			else:
 				raise ValueError(
-					f"Invalid `Grad` value: expected list of string or callable, got {kwargs["Grad"]} (type={type(kwargs["Grad"]).__name__})."
+					f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs['Grad']).__name__})."
 				)
 	else:
 		if isinstance(kwargs["AutoDiff"], bool):
@@ -143,7 +143,7 @@ def HiSDCheckParam(instance, **kwargs):
 						for list_str in kwargs["Grad"]:
 							if not isinstance(list_str, str):
 								raise ValueError(
-									f"Invalid `Grad` value: expected list of string or callable, got {kwargs["Grad"]} (type={type(kwargs["Grad"]).__name__})."
+									f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs["Grad"]).__name__})."
 								)
 						instance.AutoDiff = False
 						instance.GradFunction_sympy, instance.GradFunction_numpy = (
@@ -154,11 +154,11 @@ def HiSDCheckParam(instance, **kwargs):
 						instance.GradSym = False
 					else:
 						raise ValueError(
-							f"Invalid `Grad` value: expected list of string or callable, got {kwargs["Grad"]} (type={type(kwargs["Grad"]).__name__})."
+							f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs['Grad']).__name__})."
 						)
 		else:
 			raise ValueError(
-				f"Invalid `AutoDiff` value: expected bool, got {kwargs["AutoDiff"]} (type={type(kwargs["AutoDiff"]).__name__})."
+				f"Invalid `AutoDiff` value: expected bool, got {kwargs['AutoDiff']} (type={type(kwargs['AutoDiff']).__name__})."
 			)
 
 	# Energy function validation
@@ -171,7 +171,7 @@ def HiSDCheckParam(instance, **kwargs):
 				instance.EnergyFunctionCal = instance.EnergyFunction
 			else:
 				raise ValueError(
-					f"Invalid `EnergyFunction` value: expected string or callable, got {kwargs["EnergyFunction"]} (type={type(kwargs["EnergyFunction"]).__name__})."
+					f"Invalid `EnergyFunction` value: expected string or callable, got {kwargs['EnergyFunction']} (type={type(kwargs['EnergyFunction']).__name__})."
 				)
 		else:
 			instance.EnergyFunctionSolve = EnergyFunctionAnalysis(instance)
@@ -184,7 +184,7 @@ def HiSDCheckParam(instance, **kwargs):
 				instance.Grad = lambda x: AutoGradNum(instance, x)
 			else:
 				raise ValueError(
-					f"Invalid `EnergyFunction` value: expected string or callable, got {kwargs["EnergyFunction"]} (type={type(kwargs["EnergyFunction"]).__name__})."
+					f"Invalid `EnergyFunction` value: expected string or callable, got {kwargs['EnergyFunction']} (type={type(kwargs['EnergyFunction']).__name__})."
 				)
 		else:
 			if instance.NumericalGrad:
@@ -259,7 +259,7 @@ def HiSDCheckParam(instance, **kwargs):
 	if "GradientSystem" in kwargs:
 		if not isinstance(kwargs["GradientSystem"], bool):
 			raise ValueError(
-				f"Invalid `GradientSystem` value: expected bool, got {kwargs["GradientSystem"]} (type={type(kwargs["GradientSystem"]).__name__})."
+				f"Invalid `GradientSystem` value: expected bool, got {kwargs['GradientSystem']} (type={type(kwargs['GradientSystem']).__name__})."
 			)
 		else:
 			instance.GradientSystem = kwargs["GradientSystem"]
@@ -272,7 +272,7 @@ def HiSDCheckParam(instance, **kwargs):
 	if "SymmetryCheck" in kwargs:
 		if not isinstance(kwargs["SymmetryCheck"], bool):
 			raise ValueError(
-				f"Invalid `SymmetryCheck` value: expected bool, got {kwargs["SymmetryCheck"]} (type={type(kwargs["SymmetryCheck"]).__name__})."
+				f"Invalid `SymmetryCheck` value: expected bool, got {kwargs['SymmetryCheck']} (type={type(kwargs['SymmetryCheck']).__name__})."
 			)
 		if not kwargs["SymmetryCheck"]:
 			instance.SymmetryCheck = False
@@ -370,14 +370,14 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 		if param_name == "EigenMethod":
 			if kwargs["EigenMethod"] not in ["lobpcg", "euler", "power"]:
 				raise ValueError(
-					f"Invalid `EigenMethod` value: expected one of 'lobpcg', 'euler' or 'power', got {kwargs["EigenMethod"]} (type={type(kwargs["EigenMethod"]).__name__})."
+					f"Invalid `EigenMethod` value: expected one of 'lobpcg', 'euler' or 'power', got {kwargs['EigenMethod']} (type={type(kwargs['EigenMethod']).__name__})."
 				)
 			else:
 				return kwargs["EigenMethod"]
 		if param_name == "Acceleration":
 			if kwargs["Acceleration"] not in ["none", "heavyball", "nesterov"]:
 				raise ValueError(
-					f"Invalid `Acceleration` value: expected one of 'none', 'heavyball' or 'nesterov', got {kwargs["Acceleration"]} (type={type(kwargs["Acceleration"]).__name__})."
+					f"Invalid `Acceleration` value: expected one of 'none', 'heavyball' or 'nesterov', got {kwargs['Acceleration']} (type={type(kwargs['Acceleration']).__name__})."
 				)
 			else:
 				return kwargs["Acceleration"]
@@ -386,7 +386,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["TimeStep"]
 			else:
 				raise ValueError(
-					f"Invalid `TimeStep` value: expected positive float, got {kwargs["TimeStep"]} (type={type(kwargs["TimeStep"]).__name__})."
+					f"Invalid `TimeStep` value: expected positive float, got {kwargs['TimeStep']} (type={type(kwargs['TimeStep']).__name__})."
 				)
 		if param_name == "PrecisionTol":
 			if (
@@ -396,21 +396,21 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["PrecisionTol"]
 			else:
 				raise ValueError(
-					f"Invalid `PrecisionTol` value: expected non-negative float, got {kwargs["PrecisionTol"]} (type={type(kwargs["PrecisionTol"]).__name__})."
+					f"Invalid `PrecisionTol` value: expected non-negative float, got {kwargs['PrecisionTol']} (type={type(kwargs['PrecisionTol']).__name__})."
 				)
 		if param_name == "Momentum":
 			if isinstance(kwargs["Momentum"], float) and kwargs["Momentum"] >= 0.0:
 				return kwargs["Momentum"]
 			else:
 				raise ValueError(
-					f"Invalid `Momentum` value: expected non-negative float, got {kwargs["Momentum"]} (type={type(kwargs["Momentum"]).__name__})."
+					f"Invalid `Momentum` value: expected non-negative float, got {kwargs['Momentum']} (type={type(kwargs['Momentum']).__name__})."
 				)
 		if param_name == "NesterovChoice":
 			if kwargs["NesterovChoice"] in [1, 2]:
 				return kwargs["NesterovChoice"]
 			else:
 				raise ValueError(
-					f"Invalid `NesterovChoice` value: expected `1` or `2`, got {kwargs["NesterovChoice"]} (type={type(kwargs["NesterovChoice"]).__name__})."
+					f"Invalid `NesterovChoice` value: expected `1` or `2`, got {kwargs['NesterovChoice']} (type={type(kwargs['NesterovChoice']).__name__})."
 				)
 		if param_name == "NesterovRestart":
 			if (
@@ -420,28 +420,28 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["NesterovRestart"]
 			else:
 				raise ValueError(
-					f"Invalid `NesterovRestart` value: expected positive integer, got {kwargs["NesterovRestart"]} (type={type(kwargs["NesterovRestart"]).__name__})."
+					f"Invalid `NesterovRestart` value: expected positive integer, got {kwargs['NesterovRestart']} (type={type(kwargs['NesterovRestart']).__name__})."
 				)
 		if param_name == "BBStep":
 			if isinstance(kwargs["BBStep"], bool):
 				return kwargs["BBStep"]
 			else:
 				raise ValueError(
-					f"Invalid `BBStep` value: expected bool, got {kwargs["BBStep"]} (type={type(kwargs["BBStep"]).__name__})."
+					f"Invalid `BBStep` value: expected bool, got {kwargs['BBStep']} (type={type(kwargs['BBStep']).__name__})."
 				)
 		if param_name == "MaxIter":
 			if isinstance(kwargs["MaxIter"], int) and kwargs["MaxIter"] > 0:
 				return kwargs["MaxIter"]
 			else:
 				raise ValueError(
-					f"Invalid `MaxIter` value: expected positive integer, got {kwargs["MaxIter"]} (type={type(kwargs["MaxIter"]).__name__})."
+					f"Invalid `MaxIter` value: expected positive integer, got {kwargs['MaxIter']} (type={type(kwargs['MaxIter']).__name__})."
 				)
 		if param_name == "EigenMaxIter":
 			if isinstance(kwargs["EigenMaxIter"], int) and kwargs["EigenMaxIter"] > 0:
 				return kwargs["EigenMaxIter"]
 			else:
 				raise ValueError(
-					f"Invalid `EigenMaxIter` value: expected positive integer, got {kwargs["EigenMaxIter"]} (type={type(kwargs["EigenMaxIter"]).__name__})."
+					f"Invalid `EigenMaxIter` value: expected positive integer, got {kwargs['EigenMaxIter']} (type={type(kwargs['EigenMaxIter']).__name__})."
 				)
 		if param_name == "HessianDimerLength":
 			if (
@@ -451,7 +451,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["HessianDimerLength"]
 			else:
 				raise ValueError(
-					f"Invalid `HessianDimerLength` value: expected positive float, got {kwargs["HessianDimerLength"]} (type={type(kwargs["HessianDimerLength"]).__name__})."
+					f"Invalid `HessianDimerLength` value: expected positive float, got {kwargs['HessianDimerLength']} (type={type(kwargs['HessianDimerLength']).__name__})."
 				)
 		if param_name == "EigenStepSize":
 			if (
@@ -461,21 +461,21 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["EigenStepSize"]
 			else:
 				raise ValueError(
-					f"Invalid `EigenStepSize` value: expected positive float, got {kwargs["EigenStepSize"]} (type={type(kwargs["EigenStepSize"]).__name__})."
+					f"Invalid `EigenStepSize` value: expected positive float, got {kwargs['EigenStepSize']} (type={type(kwargs['EigenStepSize']).__name__})."
 				)
 		if param_name == "DimerLength":
 			if isinstance(kwargs["DimerLength"], float) and kwargs["DimerLength"] > 0:
 				return kwargs["DimerLength"]
 			else:
 				raise ValueError(
-					f"Invalid `DimerLength` value: expected positive float, got {kwargs["DimerLength"]} (type={type(kwargs["DimerLength"]).__name__})."
+					f"Invalid `DimerLength` value: expected positive float, got {kwargs['DimerLength']} (type={type(kwargs['DimerLength']).__name__})."
 				)
 		if param_name == "Verbose":
 			if isinstance(kwargs["Verbose"], bool):
 				return kwargs["Verbose"]
 			else:
 				raise ValueError(
-					f"Invalid `Verbose` value: expected bool, got {kwargs["Verbose"]} (type={type(kwargs["Verbose"]).__name__})."
+					f"Invalid `Verbose` value: expected bool, got {kwargs['Verbose']} (type={type(kwargs['Verbose']).__name__})."
 				)
 		if param_name == "ReportInterval":
 			if (
@@ -485,26 +485,26 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["ReportInterval"]
 			else:
 				raise ValueError(
-					f"Invalid `ReportInterval` value: expected positive integer, got {kwargs["ReportInterval"]} (type={type(kwargs["ReportInterval"]).__name__})."
+					f"Invalid `ReportInterval` value: expected positive integer, got {kwargs['ReportInterval']} (type={type(kwargs['ReportInterval']).__name__})."
 				)
 		if param_name == "Tolerance":
 			if isinstance(kwargs["Tolerance"], float) and kwargs["Tolerance"] > 0:
 				return kwargs["Tolerance"]
 			else:
 				raise ValueError(
-					f"Invalid `Tolerance` value: expected positive float, got {kwargs["Tolerance"]} (type={type(kwargs["Tolerance"]).__name__})."
+					f"Invalid `Tolerance` value: expected positive float, got {kwargs['Tolerance']} (type={type(kwargs['Tolerance']).__name__})."
 				)
 		if param_name == "SearchArea":
 			if isinstance(kwargs["SearchArea"], float) and kwargs["SearchArea"] > 0:
 				return kwargs["SearchArea"]
 			else:
 				raise ValueError(
-					f"Invalid `SearchArea` value: expected positive float, got {kwargs["SearchArea"]} (type={type(kwargs["SearchArea"]).__name__})."
+					f"Invalid `SearchArea` value: expected positive float, got {kwargs['SearchArea']} (type={type(kwargs['SearchArea']).__name__})."
 				)
 		if param_name == "ExactHessian":
 			if isinstance(kwargs["ExactHessian"], bool):
 				return kwargs["ExactHessian"]
 			else:
 				raise ValueError(
-					f"Invalid `ExactHessian` value: expected bool, got {kwargs["ExactHessian"]} (type={type(kwargs["ExactHessian"]).__name__})."
+					f"Invalid `ExactHessian` value: expected bool, got {kwargs['ExactHessian']} (type={type(kwargs['ExactHessian']).__name__})."
 				)

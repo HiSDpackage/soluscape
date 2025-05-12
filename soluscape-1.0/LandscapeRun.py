@@ -3,7 +3,6 @@
 # Contributors: Jin ZHAO, Hua SU.
 
 import numpy as np
-import sys
 import warnings
 from itertools import combinations
 
@@ -89,8 +88,7 @@ def LandscapeRun(instance):
 			break
 		k = k - 1
 	if k == -1:
-		print("No more saddle points found in the search area!")
-		sys.exit()
+		raise RuntimeError("No more saddle points found in the search area!")
 
 	np.random.seed(1121)
 	while tempList:

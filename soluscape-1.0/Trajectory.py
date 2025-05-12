@@ -79,13 +79,13 @@ def DrawSearchTrajectory(instance, **kwargs):
 	if instance.Dim > 2 or isfunction(kwargs["Projection"]):
 		if isfunction(kwargs["Projection"]) and instance.Dim == 2:
 			print(
-				"[WARNING] Since the `Projection` parameter is valid, the trajectory is drawn after projection. "
+				"[WARNING] Since the `Projection` parameter is valid, the trajectory is drawn after projection. \n"
 				"Provide a function that accepts an (n, dim) ndarray as input and returns an (n, 2) ndarray as output."
 			)
 		if kwargs["Projection"] is None or not isfunction(kwargs["Projection"]):
 			print(
-				"[WARNING] Visualization of search paths is not supported for dimensions greater than 2. "
-				"Please use the `Projection` parameter to project the data to 2D. "
+				"[WARNING] Visualization of search paths is not supported for dimensions greater than 2. \n"
+				"Please use the `Projection` parameter to project the data to 2D. \n"
 				"Provide a function that accepts an (n, dim) ndarray as input and returns an (n, 2) ndarray as output."
 			)
 		else:

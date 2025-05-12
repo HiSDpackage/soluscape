@@ -24,9 +24,7 @@ class Landscape:
 		"""
 		Run the landscape process.
 		"""
-		print("\n")
-		print("Start running:\n" + "-" * 30)
-		print("\n")
+		print("\n"+"Start running:"+"\n" + "-" * 30+"\n")
 		LandscapeRun(self)
 
 	def RestartFromPoint(self, RestartPoint, MaxIndex):
@@ -44,6 +42,8 @@ class Landscape:
 		"""
 		Run the landscape process.
 		"""
+		if BeginID >= len(self.SaddleList):
+			raise ValueError("Invalid saddle ID")
 		RestartPoint = self.SaddleList[BeginID][1] + np.array(Perturbation).reshape(
 			-1, 1
 		)

@@ -22,6 +22,6 @@ def Save(instance, filepath):
 			"MorseIndex": instance.finalindex,
 		},
 	}
-	# write into the file
+	# Write into the file
 	with open(filepath, "w") as file:
 		json.dump(output, file)

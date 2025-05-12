@@ -22,7 +22,7 @@ def SaveLandscape(instance, filepath, fileformat):
 			"MorseIndex": [row[2] for row in instance.SaddleList],
 			"FatherSet": [row[4] for row in instance.SaddleList],
 		}
-		# write into the file
+		# Write into the file
 		with open(filepath, "w") as file:
 			json.dump(output, file)
 	elif fileformat == "mat":

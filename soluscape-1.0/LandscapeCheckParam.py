@@ -16,7 +16,7 @@ def LandscapeCheckParam(instance, **kwargs):
 	print("[HiSD] Current parameters (initialized):")
 	instance.calHiSD = HiSDSolver.Solver(
 		**kwargs
-	)  # generate a solver to find a saddle point
+	)  # Generate a solver to find a saddle point
 	instance.Dim = instance.calHiSD.Dim
 	instance.InitialPoint = instance.calHiSD.InitialPoint + 1e-3
 	instance.calHiSD.InitialPoint = instance.calHiSD.InitialPoint + 1e-3
@@ -83,7 +83,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 					return kwargs["MaxIndex"]
 			else:
 				raise ValueError(
-					f"Invalid `MaxIndex` value: expected non-negative integer, got {kwargs["MaxIndex"]} (type={type(kwargs["MaxIndex"]).__name__})."
+					f"Invalid `MaxIndex` value: expected non-negative integer, got {kwargs['MaxIndex']} (type={type(kwargs['MaxIndex']).__name__})."
 				)
 		if param_name == "InitialEigenVectors":
 			tempv0 = np.array(kwargs["InitialEigenVectors"])
@@ -93,7 +93,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				or tempv0.shape[1] != instance.MaxIndex
 			):
 				raise ValueError(
-					f"Invalid `InitialEigenVectors` value: expected (d, k)-shaped matrix, got {kwargs["InitialEigenVectors"]} (type={type(kwargs["InitialEigenVectors"]).__name__})."
+					f"Invalid `InitialEigenVectors` value: expected (d, k)-shaped matrix, got {kwargs['InitialEigenVectors']} (type={type(kwargs['InitialEigenVectors']).__name__})."
 					f"where d = {instance.Dim} (problem dimension) and k = {instance.MaxIndex} (MaxIndex). "
 				)
 			return tempv0
@@ -108,7 +108,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["SameJudgementMethod"]
 			else:
 				raise ValueError(
-					f"Invalid `SameJudgementMethod` value: expected non-negative float or callable, got {kwargs["SameJudgementMethod"]} (type={type(kwargs["SameJudgementMethod"]).__name__})."
+					f"Invalid `SameJudgementMethod` value: expected non-negative float or callable, got {kwargs['SameJudgementMethod']} (type={type(kwargs['SameJudgementMethod']).__name__})."
 				)
 		if param_name == "PerturbationRadius":
 			if (
@@ -119,12 +119,12 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["PerturbationRadius"]
 			else:
 				raise ValueError(
-					f"Invalid `PerturbationRadius` value: expected positive float, got {kwargs["PerturbationRadius"]} (type={type(kwargs["PerturbationRadius"]).__name__})."
+					f"Invalid `PerturbationRadius` value: expected positive float, got {kwargs['PerturbationRadius']} (type={type(kwargs['PerturbationRadius']).__name__})."
 				)
 		if param_name == "PerturbationMethod":
 			if kwargs["PerturbationMethod"] not in ["gaussian", "uniform"]:
 				raise ValueError(
-					f"Invalid `PerturbationMethod` value: expected one of 'gaussian' or 'uniform', got {kwargs["PerturbationMethod"]} (type={type(kwargs["PerturbationMethod"]).__name__})."
+					f"Invalid `PerturbationMethod` value: expected one of 'gaussian' or 'uniform', got {kwargs['PerturbationMethod']} (type={type(kwargs['PerturbationMethod']).__name__})."
 				)
 			else:
 				return kwargs["PerturbationMethod"]
@@ -136,12 +136,12 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["PerturbationNumber"]
 			else:
 				raise ValueError(
-					f"Invalid `PerturbationNumber` value: expected non-negative integer, got {kwargs["PerturbationNumber"]} (type={type(kwargs["PerturbationNumber"]).__name__})."
+					f"Invalid `PerturbationNumber` value: expected non-negative integer, got {kwargs['PerturbationNumber']} (type={type(kwargs['PerturbationNumber']).__name__})."
 				)
 		if param_name == "EigenCombination":
 			if kwargs["EigenCombination"] not in ["all", "min"]:
 				raise ValueError(
-					f"Invalid `EigenCombination` value: expected one of 'all' or 'min', got {kwargs["EigenCombination"]} (type={type(kwargs["EigenCombination"]).__name__})."
+					f"Invalid `EigenCombination` value: expected one of 'all' or 'min', got {kwargs['EigenCombination']} (type={type(kwargs['EigenCombination']).__name__})."
 				)
 			else:
 				return kwargs["EigenCombination"]
@@ -150,7 +150,7 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 				return kwargs["MaxIndexGap"]
 			else:
 				raise ValueError(
-					f"Invalid `MaxIndexGap` value: expected positive integer, got {kwargs["MaxIndexGap"]} (type={type(kwargs["MaxIndexGap"]).__name__})."
+					f"Invalid `MaxIndexGap` value: expected positive integer, got {kwargs['MaxIndexGap']} (type={type(kwargs['MaxIndexGap']).__name__})."
 				)
 
 
