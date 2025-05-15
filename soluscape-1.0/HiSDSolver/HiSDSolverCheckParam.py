@@ -143,7 +143,7 @@ def HiSDCheckParam(instance, **kwargs):
 						for list_str in kwargs["Grad"]:
 							if not isinstance(list_str, str):
 								raise ValueError(
-									f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs["Grad"]).__name__})."
+									f"Invalid `Grad` value: expected list of string or callable, got {kwargs['Grad']} (type={type(kwargs['Grad']).__name__})."
 								)
 						instance.AutoDiff = False
 						instance.GradFunction_sympy, instance.GradFunction_numpy = (
