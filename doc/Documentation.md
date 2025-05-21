@@ -2,7 +2,7 @@
 <!--
  *        Version:  1.0.0
  *        Created:  2024-12-25
- *        Last Modified:  2025-03-13
+ *        Last Modified:  2025-05-21
  *
  *         Author:  Yuyang LIU <liuyuyang@stu.pku.edu.cn>
  *      Copyright:  Copyright (c) 2024-2025, Lei ZHANG, Yuyang LIU. All rights reserved.
@@ -263,6 +263,23 @@ Precision tolerance for eigenvalues. (We treat eigenvalues as 0 if its absolute 
 
 **Default**  
 `1e-5`   
+
+--- 
+
+**`EigvecUnified` (Optional)**  
+**Description**  
+Ensures eigenvectors corresponding to multiple eigenvalues are unified across different computational devices.
+
+**Explanation**
+Due to significant differences in the implementation of fundamental algorithms (e.g., LAPACK) across hardware platforms, eigenvectors for multiple eigenvalues may vary substantially between devices, even though they all form valid bases for the same eigenspace. When set to `True`, this parameter activates Gaussian elimination to obtain the Row-Echelon Form (REF), followed by Gram-Schmidt orthogonalization. This process standardizes the basis vectors of the eigenspace, thereby improving cross-device search stability.
+
+*Note: Outputs may still vary between devices due to differences in rounding error simulation.*
+
+**Data Type**  
+`bool`
+
+**Default**  
+`False`   
 
 --- 
 
@@ -868,7 +885,7 @@ Required external packages with version specifications:
 | Package       | Required Version | Installation Command           |
 |---------------|------------------|---------------------------------|
 | NumPy         | 2.2.3  | `pip install numpy==2.2.3`     |
-| SciPy         | 1.15.2 | `pip install scipy==1.15.2`     |
+| SciPy         | 1.15.3 | `pip install scipy==1.15.3`     |
 | SymPy         | 1.13.3 | `pip install sympy==1.13.3`       |
 | Matplotlib    | 3.10.0 | `pip install matplotlib==3.10.0` |
 | NetworkX      | 3.4.2  | `pip install networkx==3.4.2`     |
@@ -876,7 +893,7 @@ Required external packages with version specifications:
 ### Full Environment Setup
 ```bash
 pip install "numpy>=2.2.3" \
-    "scipy>=1.15.2" \
+    "scipy>=1.15.3" \
     "sympy>=1.13.3" \
     "matplotlib>=3.10.0" \
     "networkx>=3.4.2"
