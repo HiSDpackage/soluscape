@@ -248,6 +248,23 @@ Precision tolerance for eigenvalues. (We treat eigenvalues as 0 if its absolute 
 
 --- 
 
+**`EigvecUnified` (Optional)**  
+**Description**  
+Ensures eigenvectors corresponding to multiple eigenvalues are unified across different computational devices.
+
+**Explanation**
+Due to significant differences in the implementation of fundamental algorithms (e.g., LAPACK) across hardware platforms, eigenvectors for multiple eigenvalues may vary substantially between devices, even though they all form valid bases for the same eigenspace. When set to `True`, this parameter activates Gaussian elimination to obtain the Row-Echelon Form (REF), followed by Gram-Schmidt orthogonalization. This process standardizes the basis vectors of the eigenspace, thereby improving cross-device search stability.
+
+*Note: Outputs may still vary between devices due to differences in rounding error simulation.*
+
+**Data Type**  
+`bool`
+
+**Default**  
+`False`   
+
+--- 
+
 ### Acceleration Parameters
 These parameters are related to improving the speed and efficiency of the algorithm:
 `BBStep`, `Acceleration`, `NesterovChoice`, `NesterovRestart` and `Momentum`.
