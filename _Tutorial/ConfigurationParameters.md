@@ -289,7 +289,7 @@ Enables Barzilai-Borwein adaptive step sizing.
 **Description**  
 Convergence acceleration technique.
 
-**Data Type**
+**Data Type**  
 `str`
 
 **Options**  
