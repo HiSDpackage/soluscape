@@ -6,25 +6,9 @@ import numpy as np
 import warnings
 from inspect import isfunction
 from sympy import *
-from .AnaCal import (
-	ExactGradAnalysis,
-	AutoGrad,
-	EnergyFunctionCalculate,
-	AutoDerivative,
-	EnergyFunctionAnalysis,
-	AutoGradNum,
-)
-from .HessianMatrix import Hessian_Analysis_withIfsym, Hessian_Analysis
-from .EigMethod import (
-	euler,
-	euler_exacthessian,
-	euler_nonGrad,
-	euler_nonGrad_exacthessian,
-	lobpcg,
-	lobpcg_exacthessian,
-	power_nonGrad,
-	power_nonGrad_exacthessian,
-)
+from .AnaCal import *
+from .HessianMatrix import *
+from .EigMethod import *
 
 warnings.filterwarnings("ignore")
 
@@ -216,6 +200,7 @@ def HiSDCheckParam(instance, **kwargs):
 		"EigenStepSize",
 		"ExactHessian",
 		"PrecisionTol",
+		"EigvecUnified",
 	]
 	param_value_list = [
 		"lobpcg",
@@ -236,6 +221,7 @@ def HiSDCheckParam(instance, **kwargs):
 		1e-5,
 		False,
 		1e-5,
+		False,
 	]
 
 	for i in range(len(param_name_list)):
@@ -507,4 +493,11 @@ def auto_checking_parameter(instance, param_name, kwargs, param_value):
 			else:
 				raise ValueError(
 					f"Invalid `ExactHessian` value: expected bool, got {kwargs['ExactHessian']} (type={type(kwargs['ExactHessian']).__name__})."
+				)
+		if param_name == "EigvecUnified":
+			if isinstance(kwargs["EigvecUnified"], bool):
+				return kwargs["EigvecUnified"]
+			else:
+				raise ValueError(
+					f"Invalid `EigvecUnified` value: expected bool, got {kwargs['EigvecUnified']} (type={type(kwargs['EigvecUnified']).__name__})."
 				)

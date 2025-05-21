@@ -5,7 +5,7 @@
 import numpy as np
 import copy
 import warnings
-from .EigMethod import FindIndex, GiveEigenvector
+from .EigMethod import *
 
 warnings.filterwarnings("ignore")
 
@@ -107,8 +107,13 @@ def HiSDIteration(instance):
 				for i in range(instance.Dim)
 			]
 			gnorm_record.append(np.linalg.norm(g))
-			if (np.linalg.norm(g) < instance.Tolerance) & whetherkindex:
-				break
+			if np.linalg.norm(g) < instance.Tolerance:
+				if whetherkindex:
+					break
+				if j==1 or gnorm_record[-2]>=instance.Tolerance:
+					whetherk = CheckIndexk(instance, x, instance.SaddleIndex)
+					if whetherk:
+						break
 			if instance.NesterovRestart is not None:
 				if j % instance.NesterovRestart == 0:
 					if instance.NesterovChoice == 2:
@@ -155,18 +160,38 @@ def HiSDIteration(instance):
 				for i in range(instance.Dim)
 			]
 			gnorm_record.append(np.linalg.norm(g))
-			if (np.linalg.norm(g) < instance.Tolerance) & whetherkindex:
-				break
+			if np.linalg.norm(g) < instance.Tolerance:
+				if whetherkindex:
+					break
+				if j == 1 or gnorm_record[-2] >= instance.Tolerance:
+					whetherk = CheckIndexk(instance, x, instance.SaddleIndex)
+					if whetherk:
+						break
 
 	# Check for convergence and report results
 	if j == instance.MaxIter:
-		print(
-			"[WARNING] Iteration not converged: Maximum iterations reached without convergence. Skipping to next search."
-		)
-		instance.flag = False
-		instance.DataBoundary = boundarytempsave
-		return
-	negnum, zeronum, posnum, negvecs = FindIndex(instance, x)
+		if gnorm_record[-1] >= instance.Tolerance:
+			print(
+				"[WARNING] Iteration not converged: Maximum iterations reached without convergence. Skipping to next search."
+			)
+			instance.flag = False
+			instance.DataBoundary = boundarytempsave
+			return
+		negnum, zeronum, posnum, negvecs = FindIndex(instance, x)
+		if negnum+zeronum >= instance.SaddleIndex:
+			print(
+				"[Note] Due to eigenvalue approximation inaccuracies during iterations, "
+				"the search trajectory may reach a qualifying saddle point without triggering a report."
+			)
+		else:
+			print(
+				"[WARNING] Iteration not converged: Maximum iterations reached without convergence. Skipping to next search."
+			)
+			instance.flag = False
+			instance.DataBoundary = boundarytempsave
+			return
+	else:
+		negnum, zeronum, posnum, negvecs = FindIndex(instance, x)
 	if zeronum != 0:
 		print(
 			f"[WARNING] Degenerate saddle point detected under precision tol={instance.PrecisionTol}: Hessian matrix may contain zero eigenvalue(s)."

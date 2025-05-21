@@ -6,7 +6,7 @@ import numpy as np
 import warnings
 from inspect import isfunction
 from HiSDSolver import HiSDSolver
-from Perturbation import gaussianper, uniformper
+from Perturbation import *
 
 warnings.filterwarnings("ignore")
 

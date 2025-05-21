@@ -15,6 +15,7 @@ def LandscapeRun(instance):
 	"""
 	tempList = []  # Temporary list to hold intermediate saddle points
 	k = instance.MaxIndex
+	np.random.seed(1121)
 
 	# Searching for saddle points starting from MaxIndex
 	while k >= 0:
@@ -90,7 +91,6 @@ def LandscapeRun(instance):
 	if k == -1:
 		raise RuntimeError("No more saddle points found in the search area!")
 
-	np.random.seed(1121)
 	while tempList:
 		tempsearchinitial = tempList.pop(0)
 		for j in range(

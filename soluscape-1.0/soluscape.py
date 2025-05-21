@@ -3,11 +3,11 @@
 # Contributors: Jin ZHAO, Hua SU.
 
 import warnings
-from LandscapeCheckParam import LandscapeCheckParam
-from LandscapeRun import LandscapeRun
-from Trajectory import DrawSearchTrajectory
-from Connection import DrawLandscapeConnection
-from Save import SaveLandscape
+from LandscapeCheckParam import *
+from LandscapeRun import *
+from Trajectory import *
+from Connection import *
+from Save import *
 import numpy as np
 
 warnings.filterwarnings("ignore")
