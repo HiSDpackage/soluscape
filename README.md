@@ -97,7 +97,7 @@ Build-in packages:
 
 Third-party packages:
 - `numpy-2.2.3`
-- `scipy-1.15.2`
+- `scipy-1.15.3`
 - `sympy-1.13.3`
 - `matplotlib-3.10.0`
 - `networkx-3.4.2`
@@ -117,7 +117,7 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
 
 ## Authors
 
-- ### Lei ZHANG
+- **Lei ZHANG**
 
   Boya Distinguished Professor
 
@@ -130,7 +130,7 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
   - Email: [pkuzhangl@pku.edu.cn](mailto:pkuzhangl@pku.edu.cn)  
   - Website: [Lei Zhang's Homepage](http://faculty.bicmr.pku.edu.cn/~zhanglei/)
 
-- ### Yuyang LIU
+- **Yuyang LIU**
   
   Ph.D. Candidate
 
@@ -139,37 +139,16 @@ If you are interested in `soluscape` or want to contribute, please feel free to 
   - Email: [liuyuyang@stu.pku.edu.cn](mailto:liuyuyang@stu.pku.edu.cn)  
   - Website: [Yuyang Liu's Homepage](https://liuonly1121.github.io/)
 
-- <span style="font-size: 0.7em;">**Zixiang XIAO** (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)</span>  
-- <span style="font-size: 0.7em;">**Hua SU**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)</span>  
-- <span style="font-size: 0.7em;">**Jin ZHAO**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)</span>
-
-
-
-
-<!--
 ---
 
 ## Acknowledgements
 
 Special thanks to the following contributors:
+- **Zixiang XIAO** (Main website author): [xiaozixiang@stu.pku.edu.cn](mailto:xiaozixiang@stu.pku.edu.cn)
+- **Hua SU**: [suhua@pku.edu.cn](mailto:suhua@pku.edu.cn)
+- **Jin ZHAO**: [zjin@cnu.edu.cn](mailto:zjin@cnu.edu.cn)
 
 Their contributions have been invaluable in the development of this package.
-
--->
-
-### Related Work
-
-The theoretical foundation of our software package is derived from the following research articles:
-
-1. Zhang, L. (2023). Construction of solution landscapes for complex systems. _Mathematica Numerica Sinica_, ​**45**(3), 267-283. https://doi.org/10.12286/jssx.j2023-1121
-
-2. Yin, J., Zhang, L., & Zhang, P. (2019). High-index optimization-based shrinking dimer method for finding high-index saddle points. _SIAM Journal on Scientific Computing_, ​**41**(6), A3576-A3595. https://doi.org/10.1137/19M1253356
-
-3. Yin, J., Yu, B., & Zhang, L. (2020). Searching the solution landscape by generalized high-index saddle dynamics. _Science China Mathematics_, ​**64**(8). https://doi.org/10.1007/s11425-020-1737-1
-
-4. Zhang, L., Zhang, P., & Zheng, X. (2024). Understanding high-index saddle dynamics via numerical analysis. _Communications in Mathematical Sciences_, ​**23**(2). https://doi.org/10.4310/CMS.241217235844
-
-5. Luo, Y., Zhang, L., & Zheng, X. (2025). Accelerated high-index saddle dynamics method for searching high-index saddle points. _Journal of Scientific Computing_, ​**102**(3). https://doi.org/10.1007/s10915-024-02760-6
 
 ---
 
