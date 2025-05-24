@@ -26,6 +26,7 @@ def LandscapeCheckParam(instance, **kwargs):
 	instance.saddleind = 0
 	instance.GapAllowed = 1e-3
 	instance.BeginID = -1
+	instance.Continue = False
 	print("\n")
 	print("Landscape Configuration:\n" + "-" * 30)
 	print("[Landscape] Current parameters (initialized):")

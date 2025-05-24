@@ -37,6 +37,15 @@ def LandscapeRun(instance):
 				gnew = instance.calHiSD.Grad(xnew)
 				if np.linalg.norm(gold) > np.linalg.norm(gnew):
 					instance.SaddleList[smallestind][1] = instance.calHiSD.x
+				if instance.Continue:
+					tempList.append(
+						[
+							instance.SaddleList[smallestind][0],
+							instance.SaddleList[smallestind][1],
+							instance.SaddleList[smallestind][2],
+							instance.SaddleList[smallestind][3],
+						]
+					)
 				if instance.BeginID != -1 and (
 					instance.BeginID not in instance.SaddleList[smallestind][4]
 				):

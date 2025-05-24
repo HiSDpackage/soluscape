@@ -34,9 +34,13 @@ class Landscape:
 		RestartPoint = np.array(RestartPoint).reshape(-1, 1)
 		self.calHiSD.InitialPoint = RestartPoint
 		self.InitialPoint = RestartPoint
+		historyMaxIndex = self.MaxIndex
 		self.MaxIndex = MaxIndex
 		self.BeginID = -1
+		self.Continue = True
 		LandscapeRun(self)
+		self.Continue = False
+		self.MaxIndex = historyMaxIndex
 
 	def RestartFromSaddle(self, BeginID, Perturbation, MaxIndex):
 		"""
@@ -49,9 +53,13 @@ class Landscape:
 		)
 		self.calHiSD.InitialPoint = RestartPoint
 		self.InitialPoint = RestartPoint
+		historyMaxIndex = self.MaxIndex
 		self.MaxIndex = MaxIndex
 		self.BeginID = BeginID
+		self.Continue = True
 		LandscapeRun(self)
+		self.Continue = False
+		self.MaxIndex = historyMaxIndex
 
 	def DrawTrajectory(self, **kwargs):
 		"""

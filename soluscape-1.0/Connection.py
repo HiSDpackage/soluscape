@@ -70,7 +70,7 @@ def DrawLandscapeConnection(instance, **kwargs):
 			tempposList[i] = [-10 + (j + 1 / 2) * 20 / n for j in range(n)]
 	for i in range(len(instance.SaddleList)):
 		saddleindex = instance.SaddleList[i][2]
-		pos[instance.SaddleList[i][0]] = (tempposList[saddleindex].pop(0), saddleindex)
+		pos[instance.SaddleList[i][0]] = (tempposList[saddleindex].pop(0), 2*saddleindex)
 		EachSaddle[saddleindex].append(instance.SaddleList[i][0])
 
 	# Plot the graph
@@ -81,7 +81,7 @@ def DrawLandscapeConnection(instance, **kwargs):
 				G,
 				pos,
 				nodelist=EachSaddle[i],
-				node_size=math.ceil(3 * 400 / maxn) + 7,
+				node_size=math.ceil(3 * 300 / maxn) + 4,
 				**kwargs["SaddlePointSet"][i],
 			)
 	nx.draw_networkx_edges(G, pos, **kwargs["TrajectorySet"])
@@ -92,13 +92,14 @@ def DrawLandscapeConnection(instance, **kwargs):
 		G,
 		pos,
 		labels=labels,
-		font_size=math.ceil(0.45 * math.sqrt(math.ceil(3 * 400 / maxn) + 7)),
+		font_size=math.ceil(0.45 * math.sqrt(math.ceil(3 * 300 / maxn) + 4)),
 		font_color="black",
 	)
 
 	# Final plot adjustments
 	plt.title(kwargs["Title"])
 	plt.legend()
+	plt.tight_layout()
 	plt.axis("off")
 	if kwargs["WhetherSave"]:
 		plt.savefig(kwargs["SaveFigurePath"], format="png")
