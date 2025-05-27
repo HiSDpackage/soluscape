@@ -81,7 +81,7 @@ mathjax: true
 
 6. **保存结果**:
    ```python
-   mylandscape.Save(filepath, fileformat)
+   landscape.Save(filepath, fileformat)
    ```
 
 7. **重启计算**:
