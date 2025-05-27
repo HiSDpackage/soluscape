@@ -70,7 +70,7 @@ Below is a basic workflow for using soluscape-1.0:
 
 6. **Save results**:
    ```python
-   mylandscape.Save(filepath, fileformat)
+   landscape.Save(filepath, fileformat)
    ```
 
 7. **Restart**:
