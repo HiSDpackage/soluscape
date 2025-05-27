@@ -44,7 +44,7 @@ System dimension specification.
 
 --- 
 
-**`EnergyFunction` (Conditional Required)** 
+**`EnergyFunction` (Conditional Required)**  
 **Description**  
 Specifies the energy function for gradient systems.  
 
